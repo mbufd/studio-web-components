@@ -1,0 +1,15 @@
+@import url('../site.css');
+
+.distribution {
+    width: 250px; 
+    margin: var(--studio-size-2u);
+    padding: var(--studio-size-3u);
+    border-radius: var(--studio-size-1u);
+    background-color: var(--studio-paper-20);
+}
+
+.distribution-title {
+    font-weight: 400;
+    font-size: 120%;
+    margin-bottom: var(--studio-size-1u);
+}

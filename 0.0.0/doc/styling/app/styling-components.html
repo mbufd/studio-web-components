@@ -1,0 +1,104 @@
+<h3>Styling components</h3>
+<h4>Using CSS custom properties</h4>
+<div class="text">
+    Studiö components can be styled using
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties">CSS custom properties</a>.
+    This works for the most common use cases and is the best way to use the components as black boxes.
+    <div class="uk-margin-top">
+        For instance, the <code class="site-code">--studio-surface-color</code> custom property holds
+        the background color to use for a <code class="site-code">--studio-led</code>.
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li id="custom-property-html"></li>
+                <li id="custom-property-css"></li>
+            </ul>
+        </div>
+        <div class="uk-margin-top">
+            <studio-led id="green-led"></studio-led>
+        </div>
+    </div>
+    <div class="uk-margin-top">
+        Similarly, you use CSS custom properties inline with the <code class="site-code">style</code> attribute.
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li id="style-attribute-html"></li>
+            </ul>
+        </div>
+        <div class="uk-margin-top">
+            <studio-led style="--studio-surface-color: green"></studio-led>
+        </div>
+    </div>
+    <div class="uk-margin-top">
+        The documentation for each component describes the set of available custom properties.
+    </div>
+</div>
+<h4>Using parts</h4>
+<div class="text">
+    As an alternative to the CSS custom properties, Studiö components can be styled using
+    <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/::part">part pseudo-elements</a> (shadow parts).
+    For reasons explained below, we recommend the use of parts only when no CSS custom property will provide
+    what you need.
+    <div class="uk-margin-top">
+        Using CSS, each part can be styled at the element selector, class selector or id selector level.
+        The use of parts offers more flexibility than using the CSS custom properties method, however parts do not treat
+        the components as black boxes, meaning that future changes to a component's implementation may break 
+        the styling that you apply to parts.
+    </div>
+    <div class="uk-margin-top">
+        Styling with parts offers the most flexibility because you can style more than what is possible strictly with
+        the provided CSS custom properties.
+        However, be aware that your styling of the parts may break the intended presentation of a component, for
+        instance you may use <code class="site-code">position: absolute</code> but that could structurally 
+        alter how a component is represented or behaves.
+    </div>
+    <div class="uk-margin-top site-note site-warning">
+        Animations currently do now work on parts because of scoping of the @keyframes. See 
+        <a target="_blank" href="https://github.com/w3c/csswg-drafts/issues/1516">here</a>.
+    </div>
+    <div class="uk-margin-top">
+        The documentation for each component describes which parts are available.
+        There is a styling pattern shared across components, where applicable.
+    </div>
+    <div class="uk-margin-top">
+        Where available, the <code class="site-code">surface</code> part designates the main surface of a component.
+        This example shows CSS styling of the surface part of a <code class="site-code">&lt;studio-led&gt;</code>.
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li id="surface-part-html"></li>
+                <li id="surface-part-css"></li>
+            </ul>
+        </div>
+        <div class="uk-margin-top">
+            <studio-led id="pink-led"></studio-led>
+            <studio-led id="pink-led" on></studio-led>
+        </div>
+    </div>
+    <div class="uk-margin-top">
+        Where available, the <code class="site-code">border</code> part designates some border around a component.
+        This example shows CSS styling of the border part of a <code class="site-code">&lt;studio-led&gt;</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="border-part-html"></li>
+            <li id="border-part-css"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top">
+        <studio-led id="dashed-border"></studio-led>
+    </div>
+</div>

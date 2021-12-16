@@ -1,0 +1,144 @@
+<h3 id="content">Content slots</h3>
+<div class="text">
+    <div>
+        A pad displays the content of the default slot as the main text at the top.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-pad>PAD</studio-pad>
+                        <studio-pad>Longer text spans lines</studio-pad>
+                    </div>
+                </div>
+            </li>
+            <li id="pad-content-html"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        The default slot content can be emphazied using the <code class="site-code">bold</code> attribute.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad bold>
+                        BOLD
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="bold-content-html"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        Extra content can be added using the <code class="site-code">secondary</code> slot,
+        with our without main content.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-pad>PAD
+                            <div slot="secondary">Secondary</div>
+                        </studio-pad>
+                        <studio-pad>
+                            <div slot="secondary">Secondary</div>
+                        </studio-pad>
+                    </div>
+                </div>
+            </li>
+            <li id="secondary-content-html"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        Content can be other than text.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad>PLAY
+                        <div slot="secondary" class="studio-column" 
+                            style="margin-top: var(--studio-size-2u); align-items: center;
+                                   width: calc(var(--studio-size-3b) - var(--studio-size-4u));">
+                            <div class=" icon" data-feather="play"></div>
+                            <div class="mt-1u">Click to play</div>
+                        </div>
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="icon-content-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4 class="uk-margin-top">Font size</h4>
+<div class="text">
+    You can change the font size using
+    the <code class="site-code">--studio-font-size</code> CSS custom property.
+    This directly affects the default content while text in the secondary
+    content is scaled proportionally.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-pad>Font size s
+                            <div slot="secondary">Secondary</div>
+                        </studio-pad>
+                        <studio-pad style="--studio-font-size: var(--studio-size-font-xs);">Font size xs
+                            <div slot="secondary">Secondary</div>
+                        </studio-pad>
+                    </div>
+                </div>
+            </li>
+            <li id="font-size-content-html"></li>
+        </ul>
+    </div>
+</div>
+
+<div class="uk-margin-top">
+    You can also assign content to the <code class="site-code">inner-surface</code> slot.
+</div>
+<div class="uk-width-2xlarge site-code-section uk-margin-top">
+    <ul uk-tab>
+        <li><a href="#">Example</a></li>
+        <li><a href="#">HTML</a></li>
+    </ul>
+    <ul class="uk-switcher">
+        <li class="uk-active">
+            <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                <studio-pad>
+                    <img slot="inner-surface" width="100%" height="100%"
+                    src="assets/gray-goblin-100.jpg" style="mix-blend-mode: lighten;">
+                </studio-pad>
+            </div>
+        </li>
+        <li id="inner-surface-content-html"></li>
+    </ul>
+</div>

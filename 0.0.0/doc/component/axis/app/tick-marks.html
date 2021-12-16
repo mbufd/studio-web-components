@@ -1,0 +1,302 @@
+<h3 id="tick-marks">Tick marks</h3>
+<div class="text">
+    The number and sizes of major and minor tick marks of the axis are configurable.
+</div>
+
+<h4>Number of sections</h4>
+<div class="text">
+    Use the <code class="site-code">major-sections</code> attribute or
+    <code class="site-code">majorSections</code> property to configure the
+    number of major sections.
+    <div class="uk-margin-top">
+        The default is <code class="site-code">10</code> major sections,
+        which defines 11 major tick marks on the axis.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis orientation="h" major-sections="5"></studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="major-sections-html"></li>
+            <li id="major-sections-css"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        Use the <code class="site-code">minor-sections</code> attribute or
+        <code class="site-code">minorSections</code> property to configure the
+        number of minor sections.
+    </div>
+    <div class="uk-margin-top">
+        The default is <code class="site-code">5</code> minor sections,
+        which produces 4 minor minor tick marks per majer section on the axis.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom scroll">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis orientation="h" minor-sections="2"></studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="minor-sections-html"></li>
+            <li id="minor-sections-css"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top">
+        Setting <code class="site-code">minor-sections</code> to <code class="site-code">0</code> 
+        will remove the minor tick marks.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis orientation="h" minor-sections="0"></studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="no-minor-section-html"></li>
+            <li id="nominor-section-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Tick mark selection</h4>
+<div class="text">
+    Use the <code class="site-code">ticks</code> attribute to select which
+    tick marks to display. Combine the <code class="site-code">l</code>,
+    <code class="site-code">r</code> and <code class="site-code">c</code> flags 
+    to select placement of tick marks on the left, right or center.
+    <div class="uk-margin-top">
+        The default is <code class="site-code">lr</code>, which selects both the
+        left and right sides.
+    </div>
+    <div class="uk-margin-top">
+        For an horizontal axis, <code class="site-code">l</code> selects
+        the top side and <code class="site-code">r</code> selects the bottom
+        side.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <div class="ruler-box hpad-8 bk-marine">
+                            <studio-axis ticks="l" orientation="h"></studio-axis>
+                        </div>
+                        <div class="ruler-box hpad-8 bk-blueberry">
+                            <studio-axis ticks="c" orientation="h"></studio-axis>
+                        </div>
+                        <div class="ruler-box hpad-8 bk-sea">
+                            <studio-axis ticks="r" orientation="h"></studio-axis>
+                        </div>
+                        <div class="studio-row">
+                            <div class="ruler-box vpad-8 bk-marine">
+                                <studio-axis ticks="l"></studio-axis>
+                            </div>
+                            <div class="ruler-box vpad-8 bk-blueberry">
+                                <studio-axis ticks="c"></studio-axis>
+                            </div>
+                            <div class="ruler-box vpad-8 bk-sea">
+                                <studio-axis ticks="r"></studio-axis>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="ticks-html"></li>
+            <li id="ticks-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Tick mark length</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">major-length</code> and the
+        <code class="site-code">minor-length</code> attributes to set the
+        length of the major and minor tick marks respectively.
+    </div>
+    <div class="uk-margin-top">
+        Tick mark lengths are specified in units of
+        <code class="site-code">px</code> or <code class="site-code">%</code>.
+        The default is <code class="site-code">px</code> if no unit is specified.
+    </div>
+    <div class="uk-margin-top">
+        A <code class="site-code">%</code> is relative to the thickness of the axis.
+    </div>
+    <div class="uk-margin-top">
+        Use the <code class="site-code">major-length</code> atttribute or 
+        the <code class="site-code">majorLength</code> property to set the
+        length of the major tick marks.
+        The default is <code class="site-code">33%</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <div class="ruler-box hpad-8 bk-marine">
+                            <studio-axis major-length="50%" orientation="h"></studio-axis>
+                        </div>
+                        <div class="ruler-box hpad-8 bk-blueberry">
+                            <studio-axis major-length="12px" orientation="h"></studio-axis>
+                        </div>
+                        <div class="ruler-box hpad-8 bk-sea">
+                            <studio-axis major-length="8" orientation="h"></studio-axis>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="major-length-html"></li>
+            <li id="major-length-css"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top">
+        Use the <code class="site-code">minor-length</code> attribute or the 
+        <code class="site-code">minorLength</code> property to set the
+        length of the minor tick marks.
+        The default is <code class="site-code">20%</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <div class="ruler-box hpad-8 bk-marine">
+                            <studio-axis minor-length="33%" orientation="h"></studio-axis>
+                        </div>
+                        <div class="ruler-box hpad-8 bk-blueberry">
+                            <studio-axis minor-length="6px" orientation="h"></studio-axis>
+                        </div>
+                        <div class="ruler-box hpad-8 bk-sea">
+                            <studio-axis minor-length="3" orientation="h"></studio-axis>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="minor-length-html"></li>
+            <li id="minor-length-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Tick mark weight</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">major-weight</code> and the
+        <code class="site-code">minor-weight</code> attributes to set the
+        weight in pixels of the major and minor tick marks respectively.
+    </div>
+    <div class="uk-margin-top">
+        Use the <code class="site-code">major-weight</code> attribute or the 
+        <code class="site-code">majorWeight</code> property to set the
+        weight of the major tick marks.
+        The default is <code class="site-code">1</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis major-weight="2" orientation="h"></studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="major-weight-html"></li>
+            <li id="major-weight-css"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top">
+        Use the <code class="site-code">minor-weight</code> attribute or the 
+        <code class="site-code">minorWeight</code> property to set the
+        weight of the minor tick marks.
+        The default is <code class="site-code">1</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis minor-weight="2" orientation="h"></studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="minor-weight-html"></li>
+            <li id="minor-weight-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Rounded tick marks</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">rounded-ticks</code> to
+        apply a rounded style to the major and minor tick ends.
+        It is more noticeable when combined with a weight.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis rounded-ticks major-weight="2" orientation="h"></studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="rounded-ticks-html"></li>
+            <li id="rounded-ticks-css"></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+@import url('../site.css');
+
+body {
+    min-height: 100vh;
+}
+:not(pre)>code {
+    background-color: var(--studio-paper-20);
+    color: var(--studio-ink-20);
+    font-size: 70%;
+    border-radius: 2px;
+}

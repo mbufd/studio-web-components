@@ -1,0 +1,53 @@
+<h4 id="label-slot">Label start and end slots</h4>
+<div class="text">
+    Use the <code class="site-code">label-start</code> and
+    <code class="site-code">label-end</code> slots to include content
+    at the start and end of the slider.
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-slider>
+                            <studio-label slot="label-start" style="--studio-length: 100%">
+                                start
+                            </studio-label>
+                            <studio-label slot="label-end" style="--studio-length: 100%">
+                                end
+                            </studio-label>
+                        </studio-slider>
+                        <studio-slider orientation="h">
+                            <studio-label slot="label-start" orientation="90l" style="--studio-length: 100%">
+                                start
+                            </studio-label>
+                            <studio-label slot="label-end" orientation="90r" style="--studio-length: 100%">
+                                end
+                            </studio-label>
+                        </studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="label-slot-html"></li>
+        </ul>
+    </div>
+    <div class="scroll uk-margin-top">
+        <div class="site-card-20">
+            Here is an example of composition with a LED.
+            <div class="uk-margin-top">
+                <studio-slider id="led-label-slider" orientation="h" value=".5">
+                    <div slot="label-end" class="studio-column"
+                        style="width: 100%; height: 100%; justify-content: center; align-items: center;">
+                        <studio-led id="led-label" orientation="90r" style="--studio-width: var(--studio-size-2u);
+                --studio-height: var(--studio-size-4u);
+                --studio-surface-color: var(--studio-raspberry);
+                --studio-border-color: transparent;"></studio-led>
+                    </div>
+                </studio-slider>
+            </div>
+        </div>
+    </div>
+</div>

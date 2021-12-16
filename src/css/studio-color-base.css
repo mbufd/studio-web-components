@@ -1,0 +1,81 @@
+/** 
+* Semantic and fixed colors.
+* Semantic and fixed colors are designed to work will all paper colors of the dark and light themes.
+*/
+:root, :host, body {
+    /**
+    * Semantic colors (fixed)
+    */
+    /* Hues for semantic colors */
+    --studio-hue-semantic-red: 0; /* alert */
+    --studio-hue-semantic-orange: 30; /* warning */
+    --studio-hue-semantic-green: 120; /* good */
+    --studio-hue-semantic-blue: 225; /* action */
+    /** Red for alert or danger 
+    * #cc0000 rgb(204, 0, 0) hsl(0,100%,40%) bright(39%) */
+    --studio-semantic-red: rgb(204, 0, 0);
+    /** Orange for warning 
+    * #e67300 rgb(230, 115, 0) hsl(30,100%,45%) bright(58%) */
+    --studio-semantic-orange: rgb(230, 115, 0);
+    /** Green for good
+    * #009900 rgb(0, 153, 0) hsl(120,100%,30%) bright(50%) */
+    --studio-semantic-green: rgb(0, 153, 0);
+    /** Blue for action buttons 
+    * #4d79ff rgb(77, 121, 255) hsl(225,100%,65%) bright(50%)*/
+    --studio-semantic-blue: rgb(77, 121, 255); /* action */
+    /* Aliases for semantic colors */
+    --studio-semantic-alert: var(--studio-semantic-red);
+    --studio-semantic-warning: var(--studio-semantic-orange);
+    --studio-semantic-good: var(--studio-semantic-green);
+    --studio-semantic-action: var(--studio-semantic-blue);
+    /**
+    * Additional fixed colors
+    */
+    /** Neutral
+    * #616161 rgb(97, 97, 97) hsl(0,0%,38%) bright(38%) */
+    --studio-neutral: rgb(97, 97, 97);
+    /**
+    * Ink for fixed colors
+    */
+    --studio-semantic-color-ink: white;
+    --studio-fixed-color-ink: var(--studio-semantic-color-ink);
+
+    /**
+    * Color palette hues
+    */
+    --studio-hue-red: 355;
+    --studio-hue-tomato: 15;
+    --studio-hue-tangerine: 30;
+    --studio-hue-orange: 40;
+    --studio-hue-lemon: 55;
+    --studio-hue-lime: 80;
+    --studio-hue-mint: 105;
+    --studio-hue-green: 145;
+    --studio-hue-turquoise: 185;
+    --studio-hue-azure: 210;
+    --studio-hue-blue: 225;
+    --studio-hue-indigo: 255;
+    --studio-hue-violet: 265;
+    --studio-hue-purple: 280;
+    --studio-hue-pink: 300;
+    --studio-hue-magenta: 330;
+
+    /**
+    * Special papers
+    */
+    --studio-paper-black-50: rgb(50,50,50);
+    /**
+    * Special inks
+    */
+    --studio-ink-white: white;
+    --studio-ink-black-50: rgb(50,50,50);
+    --studio-ink-white-200: rgb(200,200,200);
+    --studio-ink-white-210: rgb(210,210,210);
+    --studio-ink-white-220: rgb(220,220,220);
+    --studio-ink-white-230: rgb(230,230,230);
+    --studio-ink-white-240: rgb(240,240,240);
+    --studio-ink-white-250: rgb(250,250,250);
+
+    /* Defaults */
+    --studio-default-surface-color: var(--studio-evening);
+}

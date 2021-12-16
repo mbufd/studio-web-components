@@ -1,0 +1,53 @@
+<h4>Steps</h4>
+<div class="text">
+    Use the <code class="site-code">step</code> attribute or property
+    to constrain the value to a multiple of the specified step.
+    <div class="uk-margin-top">
+        Set <code class="site-code">step</code> to <code class="site-code">0</code>
+        in order to disable the constraint. The default is <code class="site-code">0</code>.
+    </div>
+    <div class="uk-margin-top">
+        Shown below is a step of <code class="site-code">12.5</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider id="step-slider" end-value="100" step="12.5" value="0" orientation="h">
+                        <studio-axis fit slot="cursor-range" orientation="h" major-sections="8" minor-sections="0" major-length="20%"></studio-axis>
+                        <studio-label id="step-label" slot="label-start" orientation="90l"
+                                      style="--studio-length: var(--studio-size-1b); --studio-surface-color: transparent;">
+                        </studio-label>
+                    </studio-slider>
+                </div>
+            </li>
+            <li id="step-html"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top">
+        A step of <code class="site-code">1</code> rounds to integer values.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider id="step-int-slider" end-value="100" step="1" value="0" orientation="h">
+                        <studio-axis fit slot="cursor-range" orientation="h"></studio-axis>
+                        <studio-label id="step-int-label" slot="label-start" orientation="90l"
+                                      style="--studio-length: var(--studio-size-1b); --studio-surface-color: transparent;">
+                        </studio-label>
+                    </studio-slider>
+                </div>
+            </li>
+            <li id="step-int-html"></li>
+        </ul>
+    </div>
+</div>

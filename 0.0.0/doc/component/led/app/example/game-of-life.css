@@ -1,0 +1,37 @@
+/**
+ * game-of-life.css
+ */
+
+ #life-game-board {
+    --bord-size: 25; /* Match with size in game-of-life.js */
+    display: inline-block;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: var(--studio-mint-night);
+    width: calc(var(--studio-size-2u) * var(--bord-size));
+    height: calc(var(--studio-size-2u) * var(--bord-size));
+    overflow: auto;
+}
+
+.cell-row {
+    line-height: 0;
+}
+
+/* Small cells with transparent border */
+.cell-led {
+    --studio-width: var(--studio-size-2u);
+    --studio-border-color: transparent;
+}
+
+/* This is used to display the title */
+#game-of-life-overlay {
+    position: absolute;
+    font-size: 250%;
+    font-family: var(--studio-font-family);
+    color: white;
+    line-height: 1em;
+    background-color: transparent;
+    opacity: 0;
+    pointer-events: none;
+}
+

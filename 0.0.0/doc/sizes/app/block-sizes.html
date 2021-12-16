@@ -1,0 +1,56 @@
+<h3>Block unit and sizes</h3>
+<div class="text">
+    Studiö includes a block unit called <code class="site-code">b</code>.
+    <div class="uk-margin-top">
+        Elements can be of any size but Studiö comes with standard block sizes
+        as well as a standard gap size to space blocks apart.
+        This enables easy standardization of element sizes in an application.
+    </div>
+    <div class="uk-margin-top">
+        The block size <code class="site-code">--studio-size-1b</code> is fixed at
+        8 fundamental units <code class="site-code">u</code>, as shown in the width below:
+    </div>
+    <div class="uk-margin-top">
+        <div class="block"></div>
+    </div>
+
+    <div class="site-section uk-margin-top" src="common/block-units-card.html"></div>
+
+    <div class="uk-margin-top">
+        Looking at the chart above, you find that a block size of 
+        <code class="site-code">--studio-size-2b</code>
+        is twice the block size <code class="site-code">--studio-size-1b</code>,
+        plus one standard gap size <code class="site-code">--studio-size-gap</code>. 
+    </div>
+    <div class="uk-margin-top">
+        This is because a multiple of the gap size is accounted for in every block size greather than 
+        <code class="site-code">1b</code>.
+    </div>
+    <div class="uk-margin-top">
+        For instance, the first row below has 2 <code class="site-code">div</code> of width
+        <code class="site-code">--studio-size-1b</code>, spaced apart by one gap. 
+        The second row has a <code class="site-code">div</code> of width
+        <code class="site-code">--studio-size-2b</code>.
+    </div>
+    <div class="studio-column uk-margin-top">
+        <div class="studio-row">
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="block" style="width: var(--studio-size-2b);"></div>
+    </div>
+    <h4>Formula for block sizes</h4>
+    <div class="uk-margin-top">
+        The formula for a block of size is:
+    </div>
+    <div class="uk-margin-top">
+        <code class="site-code">1b = 8 * 1u</code>
+    </div>
+    <div>
+        <code class="site-code">Nb = {N}*1b + {N-1}*gap</code>
+        <div class="uk-margin-left">
+            where <code class="site-code">N > 1</code> and 
+            <code class="site-code">gap</code> is the standard gap size (<code class="site-code">1u</code>).    
+        </div>
+    </div>
+</div>

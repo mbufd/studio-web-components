@@ -1,0 +1,76 @@
+<div class="eg-example studio-column">
+    <!-- An 8 step sequencer -->
+    <!-- Label for the sequencer -->
+    <studio-label class="eg-section-label">8-STEP SEQUENCER</studio-label>
+    <div class="studio-row">
+        <!-- These pads are used as buttons with regular onclick events -->
+        <studio-pad id="play-button" class="eg-button" onclick="javascript: playSequence();">PLAY</studio-pad>
+        <studio-pad id="stop-button" class="eg-button" onclick="javascript: stopSequence();">STOP</studio-pad>
+        <studio-pad id="edit-button" class="eg-button" onclick="javascript: editSequence();">EDIT</studio-pad>
+        <studio-pad id="reset-button" class="eg-button" onclick="javascript: resetSequence();">RESET</studio-pad>
+    </div>
+    <div class="studio-row">
+        <!-- Each sequencer pad has a LED and a numeric label -->
+        <studio-pad id="seq1" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">1</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq2" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">2</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq3" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">3</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq4" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">4</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq5" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">5</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq6" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">6</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq7" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">7</studio-label></div>
+        </studio-pad>
+        <studio-pad id="seq8" inset-label class="eg-seq-pad">
+            <div slot="label-top"><studio-led class="eg-seq-led"></studio-led></div>
+            <div slot="label-bottom"><studio-label class="eg-seq-pad-number-label">8</studio-label></div>
+        </studio-pad>
+    </div>
+    <!-- The 16 drum pads -->
+    <!-- Label for the drum pads section -->
+    <studio-label class="eg-section-label">SYNTHETIC DRUM</studio-label>
+    <div class="studio-column">
+        <div class="studio-row">
+            <studio-pad id="0" uniform swipe xy-fx="xy" class="eg-drum-pad">C2</studio-pad>
+            <studio-pad id="1" uniform swipe xy-fx="xy" class="eg-drum-pad">C&#35;2</studio-pad>
+            <studio-pad id="2" uniform swipe xy-fx="xy" class="eg-drum-pad">D2</studio-pad>
+            <studio-pad id="3" uniform swipe xy-fx="xy" class="eg-drum-pad">D&#35;2</studio-pad>
+        </div>
+        <div class="studio-row">
+            <studio-pad id="4" uniform swipe xy-fx="xy" class="eg-drum-pad">E2</studio-pad>
+            <studio-pad id="5" uniform swipe xy-fx="xy" class="eg-drum-pad">F2</studio-pad>
+            <studio-pad id="6" uniform swipe xy-fx="xy" class="eg-drum-pad">F&#35;2</studio-pad>
+            <studio-pad id="7" uniform swipe xy-fx="xy" class="eg-drum-pad">G2</studio-pad>
+        </div>
+        <div class="studio-row">
+            <studio-pad id="8" uniform swipe xy-fx="xy" class="eg-drum-pad">G&#35;2</studio-pad>
+            <studio-pad id="9" uniform swipe xy-fx="xy" class="eg-drum-pad">A2</studio-pad>
+            <studio-pad id="10" uniform swipe xy-fx="xy" class="eg-drum-pad">A&#35;2</studio-pad>
+            <studio-pad id="11" uniform swipe xy-fx="xy" class="eg-drum-pad">B2</studio-pad>
+        </div>
+        <div class="studio-row">
+            <studio-pad id="12" uniform swipe xy-fx="xy" class="eg-drum-pad">C3</studio-pad>
+            <studio-pad id="13" uniform swipe xy-fx="xy" class="eg-drum-pad">C&#35;3</studio-pad>
+            <studio-pad id="14" uniform swipe xy-fx="xy" class="eg-drum-pad">D3</studio-pad>
+            <studio-pad id="15" uniform swipe xy-fx="xy" class="eg-drum-pad">D&#35;3</studio-pad>
+        </div>
+    </div>
+</div>

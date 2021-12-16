@@ -1,0 +1,68 @@
+<h3 id="action">Slider action</h3>
+<div class="text">
+    Drag the cursor to move it across the surface.
+    <div class="uk-margin-top site-note">
+        Alternatively, press on the slider surface then drag the cursor.
+        <div class="uk-margin-top">
+            When pressing on either end of the surface, the slider will move to within
+            a margin of the edge of the surface.
+        </div>
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+    <ul uk-tab>
+        <li><a href="#">Example</a></li>
+        <li><a href="#">HTML</a></li>
+    </ul>
+    <ul class="uk-switcher">
+        <li class="uk-active">
+            <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                <studio-slider orientation="h"></studio-slider>
+            </div>
+        </li>
+        <li id="slider-html"></li>
+    </ul>
+    </div>
+    <div class="uk-margin-top">
+        To limit the action to dragging the cursor only, 
+        use the <code class="site-code">no-direct</code> 
+        attribute or set the <code class="site-code">noDirect</code> 
+        property to <code class="site-code">false</code>.
+        This disables slider moves upon pressing on the surface.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <studio-label style="--studio-length: var(--studio-size-5b); --studio-surface-color: var(--studio-carbon);">no-direct</studio-label>
+                        <studio-slider no-direct orientation="h"></studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="no-direct-html"></li>
+        </ul>
+    </div>
+</div>
+<h4>Disabled</h4>
+<div class="text">
+    Used the <code class="site-code">disabled</code> attribute or property 
+    to disable interaction with the slider.
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider disabled orientation="h"></studio-slider>
+                </div>
+            </li>
+            <li id="disabled-html"></li>
+        </ul>
+    </div>
+</div>

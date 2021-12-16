@@ -1,0 +1,47 @@
+<h3 id="orientation">Orientation</h3>
+<div class="text">
+    Use the <code class="site-code">orientation</code> attribute to select between horizontal or vertical
+    orientation. Possible values are <code class="site-code">h</code>,
+    <code class="site-code">90l</code> and <code class="site-code">90r</code>, for horizontal,
+    rotated left 90&deg; and rotated right 90&deg;. The default is horizontal.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom scroll">
+                    <div class="uk-flex">
+                        <div class="studio-column">
+                            <div>
+                                <studio-label style="--studio-length: var(--studio-size-3b);">
+                                    HORIZONTAL
+                                </studio-label>
+                            </div>
+                            <div>
+                                <studio-label style="--studio-length: var(--studio-size-3b);
+                            --studio-thickness: var(--studio-size-3b);
+                            --studio-surface-color: var(--studio-neutral);">
+                                </studio-label>
+                            </div>
+                        </div>
+                        <div class="studio-row uk-margin-left">
+                            <studio-label orientation="90l" style="--studio-length: var(--studio-size-3b);">
+                                90&deg; LEFT
+                            </studio-label>
+                            <studio-label style="--studio-length: var(--studio-size-3b);
+                            --studio-thickness: var(--studio-size-3b);
+                            --studio-surface-color: var(--studio-neutral);">
+                            </studio-label>
+                            <studio-label orientation="90r" style="--studio-length: var(--studio-size-3b);">
+                                90&deg; RIGHT
+                            </studio-label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="orientation-html"></li>
+        </ul>
+    </div>
+</div>

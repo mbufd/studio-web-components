@@ -1,0 +1,46 @@
+{
+  "name": "studio-web-components",
+  "version": "0.1.0",
+  "description": "The Studiö Web Components is a set of Web Components for use in control panel applications.",
+  "scripts": {
+    "build": "tsc --watch",
+    "build:dist": "node scripts/bundler/make-lib.mjs",
+    "serve": "browser-sync start -s -w --no-notify",
+    "serve:br": "http-server --brotli",
+    "test": "echo \"No test specified yet\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbufd/studio-web-components.git"
+  },
+  "keywords": [],
+  "author": "Front Dynamics",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbufd/studio-web-components/issues"
+  },
+  "homepage": "https://github.com/mbufd/studio-web-components#readme",
+  "dependencies": {
+    "lit": "^2.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "@web/rollup-plugin-copy": "^0.3.0",
+    "browser-sync": "^2.27.5",
+    "http-server": "^13.0.2",
+    "rollup": "^2.57.0",
+    "rollup-plugin-brotli": "^3.1.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-minify-html-literals": "^1.2.6",
+    "rollup-plugin-summary": "^1.3.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "@lit-labs/react": "^1.0.1",
+    "@types/react": "^17.0.37",
+    "react": "^17.0.2"
+  },
+  "comments": [
+    "@lit-labs/react, @types/react and react are needed only to compile under /react-wrappers",
+    "/react-wrappers is part of the NPM (/lib) distribution and is for use by React only",
+    "/react-wrappers is not part of the CDN (/dist) distribution"
+  ]
+}

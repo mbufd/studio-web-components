@@ -1,0 +1,97 @@
+<h3 id="parts">Styling using parts</h3>
+<div class="text">
+    If styling with the provided CSS custom properties is not enough,
+    you can use the  <code class="site-code">outer-surface</code>
+    and <code class="site-code">inner-surface</code> parts to 
+    expand the styling capabilities.
+    <div class="uk-margin-top">
+        The surface is composed of an outer part as well as an inner part.
+        The outer part looks like a border when the inner part is opaque,
+        and will show through if the inner part is made translucent.
+        By default, both parts are of color 
+        <code class="site-code">--studio-surface-color</code> and the 
+        inner part increases in brightness when hovering or activating 
+        the pad.
+    </div>
+</div>
+
+<h4>Outer surface part</h4>
+<div class="text">
+    The <code class="site-code">outer-surface</code> part provides the background 
+    and border for the pad.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad id="custom-outer-surface">
+                        outer-surface
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="outer-surface-html"></li>
+            <li id="outer-surface-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Inner surface part</h4>
+<div class="text">
+    The <code class="site-code">inner-surface</code> part overlays the 
+    <code class="site-code">outer-surface</code> part, within a margins.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad id="custom-inner-surface">
+                        inner-surface
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="inner-surface-html"></li>
+            <li id="inner-surface-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Composed styling</h4>
+<div class="text">
+    Use both parts for special styling. In the example below, 
+    the translucent <code class="site-code">inner-surface</code> part
+    uses a radial gradient to make a glassy glow effect, combined with the 
+    <code class="site-code">outer-surface</code> that is rendered
+    using a linear gradient.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-pad class="composed-surface">
+                            combined
+                        </studio-pad>
+                        <studio-pad class="composed-surface" style="--studio-surface-color: var(--studio-spruce);">
+                            combined
+                        </studio-pad>        
+                    </div>
+                </div>
+            </li>
+            <li id="composed-surface-html"></li>
+            <li id="composed-surface-css"></li>
+        </ul>
+    </div>
+</div>
+

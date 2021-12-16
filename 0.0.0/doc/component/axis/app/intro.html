@@ -1,0 +1,31 @@
+<div class="text">
+    <div class="site-big-text">
+        The <code class="site-code">&lt;studio-axis&gt;</code> component renders
+        an axis with customizable tick marks.
+    </div>
+    <div class="uk-margin-top">
+        <div class="ruler-box hpad-8 bk-marine">
+            <studio-axis orientation="h"></studio-axis>
+        </div>
+        <div class="uk-margin-top ml-2u">
+            <studio-axis orientation="h" ticks='c' major-length="80%" minor-length="50%" style="--studio-thickness: var(--studio-size-4u);
+                     --studio-content-color: var(--studio-ink-30); 
+                     --studio-accent-color: var(--studio-ink-37);">
+            </studio-axis>
+        </div>
+        <div class="uk-margin-top ml-2u">
+            <div class="studio-column">
+                <studio-slider orientation="h" style="--studio-surface-color: var(--studio-sea);">
+                    <studio-axis fit slot="cursor-range" orientation="h" style="--studio-content-color: var(--studio-turquoise-flower);
+                         --studio-accent-color: hsla(var(--studio-hue-mint), 100%, 50%, .4);">
+                    </studio-axis>
+                </studio-slider>
+                <studio-slider orientation="h" style="--studio-surface-color: var(--studio-sea);">
+                    <studio-axis fit slot="cursor-range" orientation="h" ticks="c" style="--studio-content-color: var(--studio-turquoise-flower);
+                         --studio-accent-color: hsla(var(--studio-hue-mint), 100%, 50%, .4);">
+                    </studio-axis>
+                </studio-slider>
+            </div>
+        </div>
+    </div>
+</div>

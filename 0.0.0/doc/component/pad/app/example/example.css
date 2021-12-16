@@ -1,0 +1,131 @@
+/**
+* example.css
+*
+* Use of <studio-pad> attributes in selectors:
+* - [selected] is used on both the sequencer and the drum pads to indicate selection.
+* - [bold] is used only on the drum pads, to indicate interaction.
+* Custom styling using parts: 
+* - We custom style only the drum pads using parts, mainly to create a glow effect.
+* Colors:
+* - We are using the default uniform color for the drum pads.
+* - All other colors are defined as a palette in the .eg-example class.
+*/
+
+/*
+* Variables
+*/
+.eg-example {
+    /* This color palette gives the feeling of a retro machine */
+    --eg-drum-pad-main-color: var(--studio-tangerine);
+    --eg-drum-pad-interaction-color: var(--studio-tomato);
+    --eg-text-color: var(--studio-orange-flower); 
+    --eg-label-color: var(--studio-cinnamon);
+    --eg-sequencer-normal-color: var(--studio-sea);
+    --eg-sequencer-bright-color: var(--studio-turquoise);
+    /* Highlight transparency levels */
+    --eg-drum-pad-regular-highlight: .4;
+    --eg-drum-pad-more-highlight: .6;
+}
+
+/* 
+* Section labels at top of sequencer and drum sections
+*/
+.eg-section-label {
+    --studio-length: var(--studio-size-8b);
+    --studio-surface-color: var(--eg-label-color);
+    --studio-content-color: var(--eg-text-color);
+}
+
+/* 
+* Control buttons in the Sequencer section
+*/
+/* Button basic styling */
+.eg-button {
+    --studio-width: var(--studio-size-2b);
+    --studio-height: var(--studio-size-1u);
+    --studio-surface-color: var(--eg-sequencer-normal-color);
+    --studio-content-color: var(--eg-text-color);
+}
+/* Button in bold state */
+.eg-button[selected] {
+    --studio-content-color: var(--eg-text-color); 
+}
+/* Button inner-surface part */
+.eg-button[selected]::part(inner-surface) {
+    box-shadow: inset 0 0 var(--studio-size-5u) 0 var(--eg-sequencer-bright-color);
+}
+
+/*
+* Sequencer section
+*/
+/* Sequencer label basic styling */
+.eg-seq-pad-number-label {
+    --studio-length: var(--studio-size-1b);
+    --studio-surface-color: transparent; 
+    --studio-content-color: var(--eg-text-color); 
+}
+/* Sequencer LED styling */
+.eg-seq-led {
+    --studio-height: var(--studio-size-1u);
+    --studio-width: var(--studio-size-6u);
+    --studio-surface-color: var(--eg-sequencer-bright-color);
+    --studio-border-color: transparent;
+}
+/* Sequencer pads  */
+.eg-seq-pad {
+    --studio-width: var(--studio-size-1b);
+    --studio-height: var(--studio-size-1b);
+    --studio-surface-color: var(--eg-sequencer-normal-color);
+}
+.eg-seq-pad[selected]{
+    --studio-surface-color: var(--eg-sequencer-bright-color);
+}
+/* Do not use the inset shadow as a default on the inner-surface */
+.eg-seq-pad[selected]::part(inner-surface) {
+    box-shadow: none;
+}
+
+/* 
+* Drum section 
+*/
+/* Drum pad basic styling */
+.eg-drum-pad {
+    --studio-width: var(--studio-size-2b);
+    --studio-height: var(--studio-size-2b);
+    --studio-surface-color: var(--eg-drum-pad-main-color);
+    --studio-content-color: var(--eg-text-color); 
+}
+/* Custom styling using parts */
+/* Drum pad outer-surface part */
+.eg-drum-pad[selected]::part(outer-surface) {
+    background-color: var(--eg-drum-pad-main-color);
+}
+.eg-drum-pad[bold]::part(outer-surface) { /* [bold] used during interaction */
+    background-color: var(--eg-drum-pad-interaction-color);
+}
+/* Drum pad inner-surface part, using a gradient to provide some "light" */
+.eg-drum-pad[selected]::part(inner-surface) {
+    box-shadow: none;
+    background: radial-gradient(
+                rgba(255,255,255,var(--eg-drum-pad-regular-highlight)), 
+                var(--eg-drum-pad-main-color));
+}
+.eg-drum-pad[bold]::part(inner-surface) { /* [bold] used during interaction */
+    background: radial-gradient(
+                rgba(255,255,255,var(--eg-drum-pad-more-highlight)),  
+                var(--eg-drum-pad-interaction-color));
+}
+
+/* 
+*  Drum inner-surface part hover.
+*  Hover only on capable devices. 
+*  Note: Surface Book 2 (or some other hybrids) renders hover where it should not
+*  such that hover state gets stuck until you hit somewhere else.
+*/
+@media (hover: hover) { /* Only hover on capable devices */
+    .eg-drum-pad[selected]::part(inner-surface):hover {
+        background: radial-gradient(
+                  rgba(255,255,255, var(--eg-drum-pad-more-highlight)),
+                  var(--eg-drum-pad-main-color));
+    }
+}

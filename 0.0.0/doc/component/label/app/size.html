@@ -1,0 +1,49 @@
+<h3 id="sizes">Sizes</h3>
+<div class="text">
+    Use the <code class="site-code">--studio-length</code> and
+    <code class="site-code">--studio-thickness</code>
+    CSS custom properties to set the length and thickness of the label.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-label style="--studio-length: 150px; --studio-thickness: 25px;">
+                        150px &times; 25px
+                    </studio-label>
+                </div>
+            </li>
+            <li id="custom-size-html"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        You can configure a label using the Studiö curated and scalable sizes.
+        When using the Studiö sizes, it is easy to match component dimensions with one another,
+        and it is easy to apply a viewing scale (100% or 125%).
+    </div>
+    <div class="uk-margin-top">
+        See the <a href="sizes">Sizes</a> chapter for details.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-label style="--studio-length: var(--studio-size-7b); --studio-thickness: var(--studio-size-5u);">
+                        --studio-size-6b &times; --studio-size-5u
+                    </studio-label>
+                </div>
+            </li>
+            <li id="studio-size-html"></li>
+        </ul>
+    </div>
+    <div class="site-section uk-margin-top" src="common/fundamental-units-card.html"></div>
+    <div class="site-section uk-margin-top" src="common/block-units-card.html"></div>
+</div>

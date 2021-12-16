@@ -1,0 +1,42 @@
+<div class="text">
+    <div class="site-big-text">
+        The <code class="site-code">&lt;studio-slider&gt;</code> component renders
+        a slider control which can be oriented horizontally or vertically.
+        The slider is fully stylable and composable with other elements.
+    </div>
+    <div class="uk-margin-top scroll">
+        <div class="studio-row">
+            <!-- Horizontal -->
+            <div class="studio-column">
+                <studio-slider value=".75" orientation="h" style="--studio-length: var(--studio-size-4b);">
+                    <studio-axis fit slot="cursor-range" orientation="h" major-sections="5"></studio-axis>
+                </studio-slider>
+                <studio-slider value=".25" orientation="h" style="--studio-length: var(--studio-size-4b);
+                --studio-surface-color: var(--studio-azure);">
+                    <studio-axis fit slot="cursor-range" orientation="h" major-sections="5"></studio-axis>
+                </studio-slider>
+                <studio-slider value=".75" orientation="h" style="--studio-length: var(--studio-size-4b);
+                --studio-surface-color: var(--studio-spruce);">
+                    <studio-axis fit slot="cursor-range" orientation="h" major-sections="5"></studio-axis>
+                </studio-slider>
+                <studio-slider value=".25" orientation="h" style="--studio-length: var(--studio-size-4b);
+                --studio-surface-color: var(--studio-tomato);">
+                    <studio-axis fit slot="cursor-range" orientation="h" major-sections="5"></studio-axis>
+                </studio-slider>
+            </div>
+            <!-- Vertical -->
+            <studio-slider value="0" style="--studio-length: var(--studio-size-4b);
+            --studio-surface-color: var(--studio-carbon);">
+                <studio-axis fit slot="cursor-range" major-sections="5"></studio-axis>
+            </studio-slider>
+            <studio-slider value=".5" style="--studio-length: var(--studio-size-4b);
+            --studio-surface-color: var(--studio-carbon);">
+                <studio-axis fit slot="cursor-range" major-sections="5"></studio-axis>
+            </studio-slider>
+            <studio-slider value="1" style="--studio-length: var(--studio-size-4b);
+            --studio-surface-color: var(--studio-carbon);">
+                <studio-axis fit slot="cursor-range" major-sections="5"></studio-axis>
+            </studio-slider>
+        </div>
+    </div>
+</div>

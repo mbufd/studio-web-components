@@ -1,0 +1,13 @@
+@import './studio-css.css';
+
+/* typography */
+:root, :host {
+    /* This indicates our preferences, but can be overriden */
+    --studio-font-family: 
+    'Bai Jamjuree', /* from google fonts, our choice for our applicatoins */
+    'Source Sans Pro', /* from google fonts */
+    -apple-system, BlinkMacSystemFont, /* apple */
+    'Segoe UI', Roboto, Ubuntu,  /* other systems */
+    'Trebuchet MS', 'Lucida Grande', /* others */
+    sans-serif; /* fallback */
+}

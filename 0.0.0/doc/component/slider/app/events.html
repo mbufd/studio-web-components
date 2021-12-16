@@ -1,0 +1,93 @@
+<h3 id="events">Events</h3>
+<div class="text">
+    A <code class="site-code">&lt;studio-slider&gt;</code> element generates
+    the following events.
+    <div class="uk-margin-left">
+        <div class="uk-margin-top">
+            <code class="site-code">studio-slider-value</code> when the value
+            of the slider changes.
+        </div>
+        <div class="uk-margin-top">
+            <code class="site-code">studio-slider-bounds</code> when one of the
+            bounds changes.
+        </div>
+        <div class="uk-margin-top">
+            <code class="site-code">studio-slider-state</code> when transiting
+            between down and up state on interactions.
+        </div>
+        <div class="uk-margin-top">
+            Each of the above events contains the <code class="site-code">studio</code> member
+            containing properties that are specific to the slider's event.
+        </div>
+    </div>
+</div>
+<h4>studio-slider-value event</h4>
+<div class="text">
+    Listen to the <code class="site-code">studio-slider-value</code> event
+    to watch for changes to the slider's value. On the event, the
+    <code class="site-code">studio.value</code> property will contain
+    value of the slider.
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider id="value-event-slider" orientation="h" end-value="100" step="1">
+                        <studio-label id="value-event-label" slot="label-start" orientation="90l"
+                            style="--studio-length: var(--studio-size-1b);">
+                        </studio-label>
+                    </studio-slider>
+                </div>
+            </li>
+            <li id="value-event-html"></li>
+            <li id="value-event-js"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>studio-slider-bounds event</h4>
+<div class="text">
+    Listen to the <code class="site-code">studio-slider-bounds</code> event
+    to watch for changes to the slider's bounds. On the event, the
+    <code class="site-code">studio.startValue</code> and
+    <code class="site-code">studio.endValue</code> properties will
+    contain the bounds for the slider's value.
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <div class="studio-row">
+                            <studio-label id="start-bound-event-label" style="--studio-length: var(--studio-size-1b);">
+                            </studio-label>
+                            <studio-label style="--studio-length: var(--studio-size-3b);
+                             --studio-surface-color: transparent"></studio-label>
+                            <studio-label id="end-bound-event-label" style="--studio-length: var(--studio-size-1b);"></studio-label>
+                        </div>
+                        <studio-slider id="bounds-event-slider" orientation="h" end-value="100" value="50"></studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="bounds-event-html"></li>
+            <li id="bounds-event-js"></li>
+        </ul>
+    </div>
+
+</div>
+
+<h4>studio-slider-state event</h4>
+<div class="text">
+    Listen to the <code class="site-code">studio-slider-state</code> event
+    to watch for changes to the slider's state. On the event, the
+    <code class="site-code">studio.down</code> property will be true or false 
+    depending on whether the mouse (or touch) is down or not.
+</div>

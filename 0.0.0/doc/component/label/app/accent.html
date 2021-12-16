@@ -1,0 +1,115 @@
+<h3 id="accent">Accent</h3>
+<div class="text">
+  You can add an accent color to the start or to the end of a label, or both.
+  The accent does not use extra space, the label size remains the same.
+  <div class="uk-width-2xlarge site-code-section uk-margin-top">
+    <ul uk-tab>
+      <li><a href="#">Example</a></li>
+      <li><a href="#">HTML</a></li>
+    </ul>
+    <ul class="uk-switcher">
+      <li class="uk-active">
+        <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+          <div class="studio-column">
+            <studio-label accent='s'>s</studio-label>
+            <studio-label accent='e'>e</studio-label>
+            <studio-label accent='se'>se</studio-label>
+          </div>
+        </div>
+      </li>
+      <li id="accent-html"></li>
+    </ul>
+  </div>
+
+  <div class="uk-margin-top">
+    By default the accent is <code class="site-code">--studio-tangerine</code>, but you can assing a color using the
+    <code class="site-code">--studio-accent-color</code> CSS custom property.
+    The color applies equally to the start and end.
+  </div>
+  <div class="uk-width-2xlarge site-code-section uk-margin-top">
+    <ul uk-tab>
+      <li><a href="#">Example</a></li>
+      <li><a href="#">HTML</a></li>
+    </ul>
+    <ul class="uk-switcher">
+      <li class="uk-active">
+        <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+          <div class="studio-column">
+            <studio-label accent='s' style="--studio-accent-color: var(--studio-mint)">
+              mint</studio-label>
+            <studio-label accent='e' style="--studio-accent-color: var(--studio-pink)">
+              pink</studio-label>
+            <studio-label accent='se' style="--studio-accent-color: var(--studio-turquoise)">
+              turquoise</studio-label>
+          </div>
+        </div>
+      </li>
+      <li id="accent-color-html"></li>
+    </ul>
+  </div>
+
+  <div class="uk-margin-top">
+    By default the accent of size <code class="site-code">1u</code>,
+    but you can assing a length using the
+    <code class="site-code">--studio-label-accent-length</code> CSS custom property.
+    The length applies equally to the start and end.
+  </div>
+  <div class="uk-width-2xlarge site-code-section uk-margin-top">
+    <ul uk-tab>
+      <li><a href="#">Example</a></li>
+      <li><a href="#">HTML</a></li>
+    </ul>
+    <ul class="uk-switcher">
+      <li class="uk-active">
+        <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+          <div class="studio-column">
+            <studio-label accent='s'
+              style="--studio-accent-color: var(--studio-orange); --studio-label-accent-length: var(--studio-size-2u);">
+              2u</studio-label>
+            <studio-label accent='e'
+              style="--studio-accent-color: var(--studio-pink); --studio-label-accent-length: var(--studio-size-3u);">
+              3u</studio-label>
+            <studio-label accent='se'
+              style="--studio-accent-color: var(--studio-turquoise);  --studio-label-accent-length: var(--studio-size-4u);">
+              4u</studio-label>
+          </div>
+        </div>
+      </li>
+      <li id="accent-length-html"></li>
+    </ul>
+  </div>
+
+  <div class="uk-margin-top">
+    Accents apply the same sideways.
+  </div>
+  <div class="studio-row uk-margin-top">
+    <studio-label accent='s' orientation="90l">s - left</studio-label>
+    <studio-label accent='e' orientation="90l">e - left</studio-label>
+    <studio-label accent='se' orientation="90l">se - left</studio-label>
+    <studio-label
+      style="--studio-surface-color: var(--studio-neutral); --studio-length: var(--studio-size-2b); --studio-thickness: var(--studio-size-4b);">
+    </studio-label>
+    <studio-label accent='s' orientation="90r">s - right</studio-label>
+    <studio-label accent='e' orientation="90r">e - right</studio-label>
+    <studio-label accent='se' orientation="90r">se - right</studio-label>
+  </div>
+
+  <div class="uk-margin-top">
+    The following example shows a gray label with a colored accent.
+  </div>
+  <div class="uk-margin-top">
+    <studio-label accent='s' style="--studio-surface-color: var(--studio-neutral);">
+      LABEL
+    </studio-label>
+  </div>
+
+  <div class="uk-margin-top">
+    The following example combines surface part styling with an accent.
+  </div>
+  <div class="uk-margin-top">
+    <studio-label accent='se' class="surface-gradient">
+      LABEL
+    </studio-label>
+  </div>
+</div>
+</div>

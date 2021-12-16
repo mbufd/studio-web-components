@@ -1,0 +1,30 @@
+<h4>Intensity range</h4>
+<div class="text uk-margin-top">
+    Use the <code class="site-code">min-intensity</code> and <code class="site-code">max-intensity</code>
+    attributes, as well as the corresponding
+    <code class="site-code">minIntensity</code> and <code class="site-code">maxIntensity</code> properties
+    to set a range of intensites in percent of the nominal brightness of the LED's color.
+    The default range is <code class="site-code">min-intensity=100</code> to
+    <code class="site-code">max-intensity=150</code>.
+</div>
+<div class="text uk-margin-top">
+    Shown below is the same normalized intensities as above, but with a range from 50 to 200.
+</div>
+<div class="uk-width-2xlarge site-code-section uk-margin-top">
+    <ul uk-tab>
+        <li><a href="#">Example</a></li>
+        <li><a href="#">HTML</a></li>
+    </ul>
+    <ul class="uk-switcher">
+        <li class="uk-active">
+            <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                <studio-led normalized-intensity=0 on min-intensity=50 max-intensity=200></studio-led>
+                <studio-led normalized-intensity=.25 on min-intensity=50 max-intensity=200></studio-led>
+                <studio-led normalized-intensity=.5 on min-intensity=50 max-intensity=200></studio-led>
+                <studio-led normalized-intensity=.75 on min-intensity=50 max-intensity=200></studio-led>
+                <studio-led normalized-intensity=1 on min-intensity=50 max-intensity=200></studio-led>
+            </div>
+        </li>
+        <li id="intensity-range-html"></li>
+    </ul>
+</div>

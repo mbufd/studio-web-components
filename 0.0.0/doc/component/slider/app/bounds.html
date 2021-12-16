@@ -1,0 +1,127 @@
+<h4>Bounds</h4>
+<div class="text">
+    Use the <code class="site-code">start-value</code> attribute or
+    <code class="site-code">startValue</code>property to set the value bound
+    for the bottom of a vertical slider or for the left end of
+    an horizontal slider.
+    <div class="uk-margin-top">
+        Use the <code class="site-code">end-value</code> attribute or
+        <code class="site-code">endValue</code>property to set the value bound
+        for the top of a vertical slider or for the right end of
+        an horizontal slider.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-label id="bounds-label" orientation="90l" style="--studio-length: var(--studio-size-1b);
+                               --studio-surface-color: var(--studio-raven);">1</studio-label>
+                        <studio-slider id="bounds-slider" value="8" start-value="1" end-value="10" step="1" orientation="h">
+                        </studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="bounds-html"></li>
+        </ul>
+    </div>
+    
+    <div class="uk-margin-top">
+        Invert the bounds if needed, by swaping the low and high values.
+        If you set <code class="site-code">start-value</code> higher than
+        <code class="site-code">end-value</code>, then a vertical slider will
+        display its lowest value at the top and an horizontal slider will
+        display its lowest value on the right.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <div class="studio-column" style="margin-top: var(--studio-size-5u);">
+                            <studio-label orientation="90l" class="co-1b">
+                                end</studio-label>
+                            <studio-label orientation="90l" class="co-3b">
+                                START &nbsp;&nbsp;&lt;&nbsp;&nbsp; END</studio-label>
+                            <studio-label orientation="90l" class="co-1b">
+                                start</studio-label>
+                        </div>
+                        <div class="studio-column">
+                            <studio-label id="bounds-v-label" style="--studio-length: var(--studio-size-1b);
+                               --studio-surface-color: var(--studio-raven);"></studio-label>
+                            <studio-slider id="bounds-v-slider" value="8" start-value="1" end-value="10" step="1">
+                            </studio-slider>
+                        </div>
+                        <div class="studio-column uk-margin-left" style="margin-top: var(--studio-size-5u);">
+                            <studio-label orientation="90l" class="co-1b">
+                                end</studio-label>
+                            <studio-label orientation="90l" class="co-3b">
+                                START &nbsp;&nbsp;&gt;&nbsp;&nbsp; END</studio-label>
+                            <studio-label orientation="90l" class="co-1b">
+                                start</studio-label>
+                        </div>
+                        <div class="studio-column">
+                            <studio-label id="inverted-bounds-v-label" style="--studio-length: var(--studio-size-1b);
+                               --studio-surface-color: var(--studio-raven);"></studio-label>
+                            <studio-slider id="inverted-bounds-v-slider" value="8" start-value="10" end-value="1" step="1">
+                            </studio-slider>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="inverted-bounds-html"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        Changes to the bounds don't affect the cursor position but are reflected in the value.
+        Setting the bounds to equal values will disable the slider and lock the cursor in place.
+        <div class="scroll">
+            <div class="uk-margin-top">
+                <div class="studio-row">
+                    <div class="studio-column">
+                        <studio-label class="co-2b">BOUNDS</studio-label>
+                        <div class="studio-row">
+                            <div class="studio-column">
+                                <studio-label class="co-1b">Start</studio-label>
+                                <studio-slider id="low-bound-slider" class="carbon" end-value="100" value="0" step="1">
+                                    <studio-label id="low-bound-label" slot="label-start" style="--studio-length: var(--studio-size-1b);
+                --studio-surface-color: transparent;"></studio-label>
+                                </studio-slider>
+                            </div>
+                            <div class="studio-column">
+                                <studio-label class="co-1b">End</studio-label>
+                                <studio-slider id="high-bound-slider" class="carbon" end-value="100" value="100" step="1">
+                                    <studio-label id="high-bound-label" slot="label-start" style="--studio-length: var(--studio-size-1b);
+                --studio-surface-color: transparent;"></studio-label>
+                                </studio-slider>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="studio-column">
+                        <studio-label class="co-5b">VALUE WITHIN BOUNDS</studio-label>
+                        <div class="studio-row">
+                            <studio-label id="value-low-bound-label" class="co-1b"></studio-label>
+                            <studio-label class="tr-3b"></studio-label>
+                            <studio-label id="value-high-bound-label" class="co-1b"></studio-label>
+                        </div>
+                        <studio-slider id="value-for-bounds-slider" orientation="h" end-value="100" value="50" step="1">
+                            <studio-label id="value-for-bounds-label" class="tr-1b" slot="label-start"
+                                orientation="90l"></studio-label>
+                        </studio-slider>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

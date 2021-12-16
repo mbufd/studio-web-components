@@ -1,0 +1,5 @@
+@import url('../../site.css');
+
+.surface-gradient::part(surface) {
+    background: linear-gradient(to right, hsl(var(--studio-hue-indigo), 100%, 10%), var(--studio-indigo));
+}

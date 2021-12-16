@@ -1,0 +1,68 @@
+<h3 id="events">Events</h3>
+<div class="text">
+    A <code class="site-code">&lt;studio-pad&gt;</code> element generates the following events.
+    <div class="uk-margin-left">
+        <div class="uk-margin-top">
+            <code class="site-code">studio-pad-down</code> indicates that the pad transited to
+            the down state.
+            This event occurs immediately as the pad is clicked or touched.
+            There is no pad click event as such.
+        </div>
+        <div class="uk-margin-top">
+            <code class="site-code">studio-pad-up</code> indicates that the pad transited back to
+            the up state.
+        </div>
+        <div class="uk-margin-top">
+            <code class="site-code">studio-pad-swipe</code> indicates a swiping motion while in
+            down state.
+        </div>
+        <div class="uk-margin-top">
+            <code class="site-code">studio-pad-move</code> indicates a mouse move (hover)
+            while in up state.
+        </div>
+    </div>
+</div>
+<h4>Event properties</h4>
+<div class="text">
+        Each of the above events contains the <code class="site-code">studio</code> member
+        containing the
+        <code class="site-code">offset</code> and <code class="site-code">pointerEvent</code>
+        properties.
+    <div class="uk-margin-top">
+        The <code class="site-code">offset</code> property contains the
+        <code class="site-code">x</code> and <code class="site-code">y</code>
+        coordinates for the event, as values normalized between 0 and 1.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Event properties</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="event-properties-js"></li>
+        </ul>
+    </div>
+</div>
+<h4>Events example</h4>
+<div class="text">
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">JS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad id="pad-event" swipe xy-fx="xy" 
+                    style="--studio-width: var(--studio-size-5b); 
+                           --studio-height: var(--studio-size-5b);">
+                        <div id="pad-event-primary">CLICK or SWIPE ME</div>
+                        <div id="pad-event-secondary" slot="secondary"></div>
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="event-example-html"></li>
+            <li id="event-example-js"></li>
+        </ul>
+    </div>
+</div>

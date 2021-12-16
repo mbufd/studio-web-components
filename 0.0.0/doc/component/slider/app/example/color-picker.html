@@ -1,0 +1,43 @@
+<div class="uk-margin-top">
+    <div class="studio-column">
+        <studio-label class="heading l6b">HEX</studio-label>
+        <studio-label id="color-patch" class="l6b"></studio-label>
+        <div class="studio-row">
+            <div class="studio-column">
+                <studio-label class="heading l3b">RGB</studio-label>
+                <div class="studio-row">
+                    <studio-slider id="red-slider" class="slider" start-value="0" end-value="255" step="1">
+                        <studio-label id="red-label" slot="label-end" class="slider-label">0</studio-label>
+                        <studio-label slot="label-start" class="slider-label">R</studio-label>
+                    </studio-slider>
+                    <studio-slider id="green-slider" class="slider" start-value="0" end-value="255" step="1">
+                        <studio-label id="green-label" slot="label-end" class="slider-label">0</studio-label>
+                        <studio-label slot="label-start" class="slider-label">G</studio-label>
+                    </studio-slider>
+                    <studio-slider id="blue-slider" class="slider" start-value="0" end-value="255" step="1">
+                        <studio-label id="blue-label" slot="label-end" class="slider-label">0</studio-label>
+                        <studio-label slot="label-start" class="slider-label">B</studio-label>
+                    </studio-slider>
+                </div>
+            </div>
+            <div class="studio-column">
+                <studio-label class="heading l3b">HSL</studio-label>
+                <div class="studio-row">
+                    <studio-slider id="hue-slider" class="slider" start-value="0" end-value="360" step="1">
+                        <div slot="cursor-range" id="hue-gradient"></div>
+                        <studio-label id="hue-label" slot="label-end" class="slider-label">0</studio-label>
+                        <studio-label slot="label-start" class="slider-label">H</studio-label>
+                    </studio-slider>
+                    <studio-slider id="saturation-slider" class="slider" start-value="0" end-value="100" step="1">
+                        <studio-label id="saturation-label" slot="label-end" class="slider-label">0</studio-label>
+                        <studio-label slot="label-start" class="slider-label">S</studio-label>
+                    </studio-slider>
+                    <studio-slider id="lightness-slider" class="slider" start-value="0" end-value="100" step="1">
+                        <studio-label id="lightness-label" slot="label-end" class="slider-label">0</studio-label>
+                        <studio-label slot="label-start" class="slider-label">L</studio-label>
+                    </studio-slider>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

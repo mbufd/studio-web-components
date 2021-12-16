@@ -1,0 +1,62 @@
+<h3 id="composition">Composition</h3>
+<div class="text">
+    Axes are especially useful for composition inside other components.
+
+    <!-- Slider -->
+    <div class="uk-margin-top">
+        Below, composed inside <code class="site-code">&lt;studio-slider&gt;</code> elements.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-slider>
+                            <studio-axis fit slot="cursor-range"></studio-axis>
+                        </studio-slider>
+                        <studio-slider orientation="h">
+                            <studio-axis fit slot="cursor-range" orientation="h"></studio-axis>
+                        </studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="slider-compo-html"></li>
+        </ul>
+    </div>
+
+    <!-- Pad -->
+    <div class="uk-margin-top">
+        Below are two axes composed inside a single <code class="site-code">&lt;studio-pad&gt;</code>
+        to provide tick marks all around the pad.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad swipe xy-fx="xy">
+                        <div style="padding-top: var(--studio-size-1u); padding-left: var(--studio-size-1u);">PAD</div>
+                        <div slot="secondary" style="padding-left: var(--studio-size-1u);">Swipe me</div>
+                        <div slot="inner-surface">
+                            <studio-axis fit orientation="v" style="position: absolute;" major-sections="5" minor-sections="5"
+                                major-length="3px" minor-length="3px">
+                            </studio-axis>
+                            <studio-axis fit orientation="h" style="position: absolute;" major-sections="5" minor-sections="5"
+                                major-length="3px" minor-length="3px">
+                            </studio-axis>
+                        </div>
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="pad-compo-html"></li>
+        </ul>
+    </div>
+
+</div>

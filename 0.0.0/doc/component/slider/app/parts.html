@@ -1,0 +1,93 @@
+<h3 id="parts">Styling with parts</h3>
+<div class="text">
+    If styling with the provided CSS custom properties is not enough,
+    you can use one of the available slider parts to expand
+    the styling capabilities.
+</div>
+<h4>The inner-surface part</h4>
+<div class="text">
+    Use the <code class="site-code">inner-surface</code> part to
+    style the main area of the slider.
+    <div class="uk-margin-top">
+        <studio-slider class="inner-surface-gradient" orientation="h"></studio-slider>
+    </div>
+</div>
+<h4>The label parts</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">label-start</code> and
+        <code class="site-code">label-end</code> parts to style the ends
+        of the slider.
+    </div>
+    <div class="uk-margin-top">
+        <studio-slider class="label-ends" orientation="h"></studio-slider>
+    </div>
+</div>
+
+<h4>The accent parts</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">accent-tl</code> and
+        <code class="site-code">accent-br</code> parts to style sides of the
+        slider.
+        The <code class="site-code">accent-tl</code> part matches the
+        top border of an horizontal slider or the left border of a vertical
+        slider. The <code class="site-code">accent-br</code> part matches
+        the other side.
+    </div>
+    <div class="uk-margin-top">
+        <studio-slider class="sides" orientation="h"></studio-slider>
+    </div>
+</div>
+<h4>The cursor parts</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">cursor</code> part to style 
+        the cursor.
+    </div>
+    <div class="uk-margin-top">
+        <studio-slider class="cursor" orientation="h"></studio-slider>
+    </div>
+</div>
+<h4>The cursor-decoration part</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">cursor-decoration</code> part to style 
+        the decoration inside the cursor.
+    </div>
+    <div class="uk-margin-top">
+        <studio-slider class="decoration" orientation="h"></studio-slider>
+    </div>
+</div>
+<h4>The cursor range part</h4>
+<div class="text">
+    <div class="uk-margin-top">
+        Use the <code class="site-code">cursor-range</code> part to style 
+        the cursor range area.
+    </div>
+    <div class="uk-margin-top">
+        <studio-slider class="cursor-range" orientation="h"></studio-slider>
+    </div>
+</div>
+
+<h4>Combining part styling</h4>
+<div class="text">
+    This example brings together all of the above parts styles into a single custom slider.
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider orientation="h"
+                    class="inner-surface-gradient label-ends sides cursor cursor-range decoration" ></studio-slider>
+                </div>
+            </li>
+            <li id="combined-parts-html"></li>
+            <li id="combined-parts-css"></li>
+        </ul>
+    </div>
+</div>

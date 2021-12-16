@@ -1,0 +1,7 @@
+@import url('../site.css');
+
+.block {
+    width: var(--studio-size-1b);
+    height: var(--studio-size-3u);
+    background: var(--studio-azure);
+}

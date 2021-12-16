@@ -1,0 +1,92 @@
+<h3 id="content">Content</h3>
+<div class="text">
+    You can use a label with or without content. Content should usually be a word or a short phrase.
+    Content is centered and the text size is adjusted automatically
+    <div class="uk-margin-top">
+        <div class="uk-width-2xlarge site-code-section uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <div class="studio-column">
+                            <studio-label></studio-label>
+                            <studio-label>LABEL</studio-label>
+                        </div>
+                    </div>
+                </li>
+                <li id="label-content-html"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-margin-top">
+        Use the <code class="site-code">--studio-content-color</code> CSS custom property 
+        to assign a text color to the label.
+        <div class="uk-width-2xlarge site-code-section uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <div>
+                            <studio-label style="--studio-content-color: var(--studio-lemon)">LABEL</studio-label>
+                        </div>
+                    </div>
+                </li>
+                <li id="text-color-html"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-margin-top">
+        The following example demonstrates the use of an icon as content, 
+        using the <a target="_blank" href="https://feathericons.com/">Feather icon collection</a> for instance.
+        <div class="uk-width-2xlarge site-code-section uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <studio-label>
+                            <div data-feather="star" style="height: 1em; width: 1em;"></div>
+                        </studio-label>
+                    </div>
+                </li>
+                <li id="label-icon-html"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-margin-top">
+        The following example demonstrates the use of a 
+        <code class="site-code">&lt;studio-led&gt;</code> as content.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-label>
+                        <studio-led on class="label-led">
+                            <div class="led-anim-layer"></div>
+                        </studio-led>
+                    </studio-label>
+                </div>
+            </li>
+            <li id="led-content-html"></li>
+            <li id="led-content-css"></li>
+        </ul>
+    </div>
+</div>
+

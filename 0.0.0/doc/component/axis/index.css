@@ -1,0 +1,31 @@
+@import url('../../site.css');
+@import url('./app/example/example.css');
+
+.co-5b {
+    --studio-surface-color: var(--studio-carbon);
+    --studio-length: var(--studio-size-5b);
+}
+
+.ruler-box{
+    display: flex; 
+    width: fit-content;
+    border-radius: 2px;
+}
+.hpad-8 {
+    padding: 0 8px 0 8px;
+}
+.vpad-8 {
+    padding: 8px 0 8px 0;
+}
+
+.no-action {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none !important;
+    touch-action: none;
+}
+.no-select {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}

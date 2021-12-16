@@ -1,0 +1,107 @@
+<h3>Configuring the React application</h3>
+<div class="text">
+    This chapter comes with a full React project in the 
+    <a target="_blank" href="https://github.com/mbufd/studio-integration-samples">Studiö integration code base</a>.
+    The sample project uses 
+    <a target="_blank" href="https://github.com/Microsoft/TypeScript-React-Starter#typescript-react-starter">TypeScript</a>
+    but the concepts are the same in other languages.
+    The main steps in configuring your React application to use
+    the Studiö Web Components are explained here.
+    <div class="uk-margin-top">
+        If you are new to React, please refer to the <a target="_blank" href="https://reactjs.org/">React documentation</a>.
+    </div>
+</div>
+
+<h4>Install the Studiö Web Components</h4>
+<div class="text">
+    Use <code class="site-code">npm install</code> to install the 
+    Studiö Web Components in your project.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">npm install</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="npm-install"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Install the Lit React wrappers</h4>
+<div class="text">
+    Use <code class="site-code">npm install</code> to install 
+    <code class="site-code">@lit-labs/react</code> in your project.
+    More on this <a target="_blank" href="https://github.com/lit/lit/tree/main/packages/labs/react">here</a>.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">npm install</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="lit-react"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top site-note">
+        This is required at the moment because React is not yet fully compliant with the Web Components standards.
+        See <a target="_blank" href="https://custom-elements-everywhere.com/">here for the current score sheet</a>.
+    </div>
+</div>
+
+<h4>Custom elements</h4>
+<div class="text">
+    In order to integrate the Studiö custom element in your React HTML templates, 
+    import the wrappers as follows from <code class="site-code">studio-react</code>.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">App.tsx</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="custom-elements-ts"></li>
+        </ul>
+    </div>
+    <div class="uk-margin-top">
+        For instance, we will be using the <code class="site-code">&lt;StudioSlider&gt;</code> React 
+        wrapper in the HTML rather than the <code class="site-code">&lt;studio-slider&gt;</code> 
+        custom element. The syntax is different but the semantics are preserved.
+    </div>
+    <div class="uk-margin-top site-note">
+        The Studiö React wrappers are built on top of 
+        <a target="_blank" href="https://github.com/lit/lit/tree/main/packages/labs/react">@lit-labs/react</a>.
+    </div>
+</div>
+
+<h4>Fonts</h4>
+<div class="text">
+    Studiö uses the <a target="_blank" href="https://fonts.google.com/specimen/Bai+Jamjuree">Bai Jamjuree</a> 
+    font by default but you need to import it first 
+    in your <code class="site-code">index.css</code> file.
+    See the <a href="styling">Styling</a> chapter if you intend to use a different font.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">index.css</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="index-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Studiö styles</h4>
+<div class="text">
+    Impor the Studiö <code class="site-code">css</code> files you need
+    in your <code class="site-code">index.css</code> file.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">index.css</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="styles-css"></li>
+        </ul>
+    </div>
+    <div class="site-note uk-margin-top">
+        You many not need all of the above but should at least include
+        one of either <code class="site-code">studio-scale-100.css</code>
+        or <code class="site-code">studio-scale-125.css</code>, 
+        as well as one of either <code class="site-code">studio-light.css</code>
+        or <code class="site-code">studio-dark.css</code>, based on 
+        what your application's requirements.
+    </div>
+</div>

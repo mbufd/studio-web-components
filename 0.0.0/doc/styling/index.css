@@ -1,0 +1,18 @@
+@import url('../site.css');
+
+#pink-led::part(surface) {
+    background-color: var(--studio-pink);
+}
+/* glow inwards when the LED is on */
+#pink-led[on]::part(surface) {
+    box-shadow: inset 0 0 3px 1px white;
+}
+
+#dashed-border::part(border) {
+    border-color: var(--studio-ink-12);
+    border-style: dashed;
+}
+
+#green-led {
+    --studio-surface-color: green;
+}

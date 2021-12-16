@@ -1,0 +1,178 @@
+@import url('../site.css');
+
+.patch {
+    display: inline-block;
+    vertical-align: top;
+    width: 60px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    text-align: center; 
+    font-family: var(--studio-font-family);
+    font-size: 85%;
+    margin-left: 2px;
+    margin-top: 2px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+.paper-patch {
+    width: var(--studio-size-10u);
+    font-size: var(--studio-size-2u);
+}
+.color-patch {
+    width: var(--studio-size-20u);
+    border-color: transparent;
+    color: var(--studio-semantic-color-ink);
+}
+
+
+.action-patch-10 { color: var(--studio-action-ink-10); cursor: pointer; background-color: var(--studio-paper-10); border-color: var(--studio-ink-17);}
+.action-patch-10:hover { color: var(--studio-action-ink-highlight-10);}
+.action-patch-20 { color: var(--studio-action-ink-20); cursor: pointer; background-color: var(--studio-paper-20); border-color: var(--studio-ink-27);}
+.action-patch-20:hover { color: var(--studio-action-ink-highlight-20);}
+.action-patch-30 { color: var(--studio-action-ink-30); cursor: pointer; background-color: var(--studio-paper-30); border-color: var(--studio-ink-37);}
+.action-patch-30:hover { color: var(--studio-action-ink-highlight-30);}
+.action-patch-40 { color: var(--studio-action-ink-40); cursor: pointer; background-color: var(--studio-paper-40); border-color: var(--studio-ink-47);}
+.action-patch-40:hover { color: var(--studio-action-ink-highlight-40);}
+.action-patch-50 { color: var(--studio-action-ink-50); cursor: pointer; background-color: var(--studio-paper-50); border-color: var(--studio-ink-57);}
+.action-patch-50:hover { color: var(--studio-action-ink-highlight-50);}
+
+.action-strip {
+    padding: 10px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    width: fit-content;
+}
+.action-strip-10 { background-color: var(--studio-paper-10); border-color: var(--studio-ink-19);}
+.action-strip-20 { background-color: var(--studio-paper-20); border-color: var(--studio-ink-29);}
+.action-strip-30 { background-color: var(--studio-paper-30); border-color: var(--studio-ink-39);}
+.action-strip-40 { background-color: var(--studio-paper-40); border-color: var(--studio-ink-49);}
+.action-strip-50 { background-color: var(--studio-paper-50); border-color: var(--studio-ink-59);}
+
+.hue-level {
+    display: inline-block;
+    width: var(--studio-size-3u);
+    height: var(--studio-size-6u);
+}
+.hsl-patch {
+    font-family: var(--studio-font-family);
+    display: inline-block;
+    width: var(--studio-size-2b);
+    height: var(--studio-size-2b);
+    border-radius: var(--studio-size-1u);
+}
+.palette-patch {
+    display: inline-block;
+    font-family: var(--studio-font-family);
+    width: var(--studio-size-4b);
+    height: var(--studio-size-1b);
+    text-align: center;
+    line-height: var(--studio-size-1b);
+    font-size: 70%;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    border-radius: 2px;
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.palette-sat { color: var(--studio-ink-light);}
+.bk-red { background-color: var(--studio-red); }
+.bk-tomato { background-color: var(--studio-tomato); }
+.bk-tangerine { background-color: var(--studio-tangerine); }
+.bk-orange { background-color: var(--studio-orange); }
+.bk-lemon { background-color: var(--studio-lemon); }
+.bk-lime { background-color: var(--studio-lime); }
+.bk-mint { background-color: var(--studio-mint); }
+.bk-green { background-color: var(--studio-green); }
+.bk-turquoise { background-color: var(--studio-turquoise); }
+.bk-azure { background-color: var(--studio-azure); }
+.bk-blue { background-color: var(--studio-blue); }
+.bk-indigo { background-color: var(--studio-indigo); }
+.bk-violet { background-color: var(--studio-violet); }
+.bk-purple { background-color: var(--studio-purple); }
+.bk-pink { background-color: var(--studio-pink); }
+.bk-magenta { background-color: var(--studio-magenta); }
+
+.palette-desat { color: var(--studio-ink-light);}
+.bk-wine { background-color: var(--studio-wine); }
+.bk-cinnamon { background-color: var(--studio-cinnamon); }
+.bk-chocolate { background-color: var(--studio-chocolate); }
+.bk-caramel { background-color: var(--studio-caramel); }
+.bk-gold { background-color: var(--studio-gold); }
+.bk-olive { background-color: var(--studio-olive); }
+.bk-leaf { background-color: var(--studio-leaf); }
+.bk-spruce { background-color: var(--studio-spruce); }
+.bk-sea { background-color: var(--studio-sea); }
+.bk-blueberry { background-color: var(--studio-blueberry); }
+.bk-marine { background-color: var(--studio-marine); }
+.bk-evening { background-color: var(--studio-evening); }
+.bk-grape { background-color: var(--studio-grape); }
+.bk-mauve { background-color: var(--studio-mauve); }
+.bk-candy { background-color: var(--studio-candy); }
+.bk-raspberry { background-color: var(--studio-raspberry); }
+
+.palette-night { color: var(--studio-ink-night);}
+.bk-red-night { background-color: var(--studio-red-night); }
+.bk-tomato-night { background-color: var(--studio-tomato-night); }
+.bk-tangerine-night { background-color: var(--studio-tangerine-night); }
+.bk-orange-night { background-color: var(--studio-orange-night); }
+.bk-lemon-night { background-color: var(--studio-lemon-night); }
+.bk-lime-night { background-color: var(--studio-lime-night); }
+.bk-mint-night { background-color: var(--studio-mint-night); }
+.bk-green-night { background-color: var(--studio-green-night); }
+.bk-turquoise-night { background-color: var(--studio-turquoise-night); }
+.bk-azure-night { background-color: var(--studio-azure-night); }
+.bk-blue-night { background-color: var(--studio-blue-night); }
+.bk-indigo-night { background-color: var(--studio-indigo-night); }
+.bk-violet-night { background-color: var(--studio-violet-night); }
+.bk-purple-night { background-color: var(--studio-purple-night); }
+.bk-pink-night { background-color: var(--studio-pink-night); }
+.bk-magenta-night { background-color: var(--studio-magenta-night); }
+
+.palette-flower { color: var(--studio-ink-flower);}
+.bk-red-flower { background-color: var(--studio-red-flower); }
+.bk-tomato-flower { background-color: var(--studio-tomato-flower); }
+.bk-tangerine-flower { background-color: var(--studio-tangerine-flower); }
+.bk-orange-flower { background-color: var(--studio-orange-flower); }
+.bk-lemon-flower { background-color: var(--studio-lemon-flower); }
+.bk-lime-flower { background-color: var(--studio-lime-flower); }
+.bk-mint-flower { background-color: var(--studio-mint-flower); }
+.bk-green-flower { background-color: var(--studio-green-flower); }
+.bk-turquoise-flower { background-color: var(--studio-turquoise-flower); }
+.bk-azure-flower { background-color: var(--studio-azure-flower); }
+.bk-blue-flower { background-color: var(--studio-blue-flower); }
+.bk-indigo-flower { background-color: var(--studio-indigo-flower); }
+.bk-violet-flower { background-color: var(--studio-violet-flower); }
+.bk-purple-flower { background-color: var(--studio-purple-flower); }
+.bk-pink-flower { background-color: var(--studio-pink-flower); }
+.bk-magenta-flower { background-color: var(--studio-magenta-flower); }
+
+studio-led::part(surface) {
+    background-color: var(--studio-red);
+}
+.led-class::part(surface) {
+    background-color: var(--studio-indigo-flower);
+}
+#special-led::part(surface) {
+    border-radius: 8px;
+    background-color: var(--studio-chocolate);
+}
+
+.warning-icon {
+    color: var(--studio-semantic-warning); 
+    min-width: 24px;
+    min-height: 24px;
+}
+
+.pad14 {
+    padding-top: 14px;
+}

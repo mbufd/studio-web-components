@@ -1,0 +1,177 @@
+<h3>Attributes and properties</h3>
+All attributes have a corresponding property named using the camel case convention.
+<div class="text">
+    <!-- fit -->
+    <div class="site-api-item site-api-attribute">fit</div>
+    <div class="site-api-item-description">
+        Specify the <code class="site-code">fit</code> attribute or
+        set the <code class="site-code">fit</code> property
+        to <code class="site-code">true</code> as a shortcut
+        to apply <code class="site-code">style="width: 100%; height: 100%"</code>
+        to the axis. This is useful when composing with some other components.
+    </div>
+
+    <!-- major-sections -->
+    <div class="site-api-item site-api-attribute">major-sections (majorSections)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">major-sections</code> attribute or
+        <code class="site-code">majorSections</code> property
+        to set the number of major sections.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">10</code>.
+        </div>
+    </div>
+    <!-- major-weight -->
+    <div class="site-api-item site-api-attribute">major-weight (majorWeight)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">major-weight</code> attribute or
+        <code class="site-code">majorWeight</code> property
+        to set the weight of major tick marks in pixels.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">1</code>.
+        </div>
+    </div>
+    <!-- major-length -->
+    <div class="site-api-item site-api-attribute">major-length (majorLength)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">major-length</code> attribute or
+        <code class="site-code">majorLength</code> property
+        to set the length of major tick marks in
+        <code class="site-code">px</code> or <code class="site-code">%</code> units.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">33%</code>.
+        </div>
+        <div class="uk-margin-top">
+            The <code class="site-code">%</code> unit is relative to
+            thickness of the axis.
+        </div>
+    </div>
+
+    <!-- minor-sections -->
+    <div class="site-api-item site-api-attribute">minor-sections (minorSections)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">minor-sections</code> attribute or
+        <code class="site-code">minorSections</code> property
+        to set the number of minor sections.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">5</code>.
+        </div>
+    </div>
+    <!-- minor-weight -->
+    <div class="site-api-item site-api-attribute">minor-weight (minorWeight)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">minor-weight</code> attribute or
+        <code class="site-code">minorWeight</code> property
+        to set the weight of minor tick marks in pixels.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">1</code>.
+        </div>
+    </div>
+    <!-- minor-length -->
+    <div class="site-api-item site-api-attribute">minor-length (minorLength)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">minor-length</code> attribute or
+        <code class="site-code">minorLength</code> property
+        to set the length of minor tick marks in
+        <code class="site-code">px</code> or <code class="site-code">%</code> units.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">20%</code>.
+        </div>
+        <div class="uk-margin-top">
+            The <code class="site-code">%</code> unit is relative to
+            thickness of the axis.
+        </div>
+    </div>
+
+    <!-- orientation -->
+    <div class="site-api-item site-api-attribute">orientation</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">orientation</code> attribute or property
+        to configure the orientation of the axis.
+        <div class="uk-margin-top">
+            Use <code class="site-code">h</code> for horizontal,
+            use <code class="site-code">v</code> for vertical.
+        </div>
+        <div class="uk-margin-top">
+            The default vertical.
+        </div>
+    </div>
+
+    <!-- rounded-ticks -->
+    <div class="site-api-item site-api-attribute">rounded-ticks</div>
+    <div class="site-api-item-description">
+        Specify the <code class="site-code">rounded-ticks</code> attribute or
+        set the <code class="site-code">roundedTicks</code> property
+        to <code class="site-code">true</code>
+        to apply rounded tips to all tick marks.
+    </div>
+
+    <!-- ticks -->
+    <div class="site-api-item site-api-attribute">ticks</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">ticks</code> attribute or property
+        to select the location of ticks using the
+        <code class="site-code">l</code>,
+        <code class="site-code">r</code> and
+        <code class="site-code">c</code> flags, which can be combined.
+        <div class="uk-margin-top">
+            The default is <code class="site-code">lr</code>.
+        </div>
+    </div>
+</div>
+
+<h3>CSS custom properties</h3>
+<div class="text">
+    <!-- surface length -->
+    <div class="site-api-item site-api-css">--studio-length</div>
+    <div class="site-api-item-description">
+        The length of the axis. This corresponds to the width if
+        the axis is horizontal, or to the height if it is vertical.
+        See the <code class="site-code">orientation</code> attribute.
+    </div>
+    <!-- surface thickness -->
+    <div class="site-api-item site-api-css">--studio-thickness</div>
+    <div class="site-api-item-description">
+        The thickness of the axis. This corresponds to the height if
+        the axis is horizontal, or to the width if it is vertical.
+        See the <code class="site-code">orientation</code> attribute.
+    </div>
+    <!-- surface color -->
+    <div class="site-api-item site-api-css">--studio-surface-color</div>
+    <div class="site-api-item-description">
+        The surface color for the axis.
+    </div>
+    <!-- content color -->
+    <div class="site-api-item site-api-css">--studio-content-color</div>
+    <div class="site-api-item-description">
+        The major tick marks color for the axis.
+    </div>
+    <!-- accent color -->
+    <div class="site-api-item site-api-css">--studio-accent-color</div>
+    <div class="site-api-item-description">
+        The minor tick marks color for the axis.
+    </div>
+</div>
+
+<h3>Parts</h3>
+<div class="text">
+    <div class="site-api-item site-api-part">surface</div>
+    <div class="site-api-item-description">
+        Use this part to style the surface of the axis.
+    </div>
+</div>
+
+<h3>Slots</h3>
+<div class="text">
+    No slot.
+</div>
+
+<h3>Methods</h3>
+<div class="text">
+    No special method.
+</div>
+
+<h3>Events</h3>
+<div class="text">
+    No special event.
+</div>

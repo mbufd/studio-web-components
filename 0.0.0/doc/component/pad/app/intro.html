@@ -1,0 +1,46 @@
+<div class="text">
+    <div class="site-big-text">
+        The <code class="site-code">&lt;studio-pad&gt;</code> component renders
+        a control pad with X-Y sensitivity. For instance, when used to control a sound,
+        the X axis may control a filter where the Y axis may control the volume level.
+    </div>
+    <div class="text uk-margin-top">
+        In it's simplest configuration, a pad acts as a button and can show a selected state,
+        to indicate for instance that the pad is in action.
+        A pad can be decorated with up to 4 labels and each side.
+        On touch-capable devices, you can control multiple pads simulataneously using mutiple touches
+        or swipes.
+    </div>
+    <div class="uk-margin-top">
+        <studio-label
+            style="--studio-thickness: var(--studio-size-4u); --studio-length: var(--studio-size-6b); --studio-surface-color: var(--studio-indigo-night);">
+            LOW PASS FILTER
+        </studio-label>
+        <studio-pad inset-label swipe xy-fx="xy" style="--studio-width: var(--studio-size-6b);">
+            <div slot="label-top">
+                <studio-label
+                    style="--studio-thickness: var(--studio-size-3u); --studio-length: var(--studio-size-2b); --studio-surface-color: transparent;">
+                    MAX VOL
+                </studio-label>
+            </div>
+            <div slot="label-bottom">
+                <studio-label
+                    style="--studio-thickness: var(--studio-size-3u); --studio-length: var(--studio-size-2b); --studio-surface-color: transparent;">
+                    MIN VOL
+                </studio-label>
+            </div>
+            <div slot="label-left">
+                <studio-label orientation="90l"
+                    style="--studio-thickness: var(--studio-size-3u); --studio-length: var(--studio-size-2b); --studio-surface-color: transparent;">
+                    20 Hz
+                </studio-label>
+            </div>
+            <div slot="label-right">
+                <studio-label orientation="90r"
+                    style="--studio-thickness: var(--studio-size-3u); --studio-length: var(--studio-size-2b); --studio-surface-color: transparent;">
+                    1200 Hz
+                </studio-label>
+            </div>
+        </studio-pad>
+    </div>
+</div>

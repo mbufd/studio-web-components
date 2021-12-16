@@ -1,0 +1,54 @@
+<!-- Wrapper for the graphics page -->
+<div id="page-wrapper" class="uk-margin-top">
+    <!-- The graphics page -->
+    <div id="graphics-page" class="no-select no-action">
+        <!-- The paper grid-->
+        <studio-axis class="eg-grid no-select no-action" orientation="v" ticks='l' major-length="100%"
+            minor-sections="0"></studio-axis>
+        <studio-axis class="eg-grid no-select no-action" orientation="h" ticks='l' major-length="100%"
+            minor-sections="0"></studio-axis>
+        <!-- The X axis -->
+        <studio-axis class="eg-axis no-select no-action" orientation="h" ticks='c' major-length="8px"
+            minor-length="4px"></studio-axis>
+        <!-- The Y axis -->
+        <studio-axis class="eg-axis no-select no-action" orientation="v" ticks='c' major-length="8px"
+            minor-length="4px"></studio-axis>
+        <!-- The plastic ruler -->
+        <div id="plastic-ruler" class="no-select no-action">
+            <!-- Ruler rotation handle -->
+            <div id="rotation-handle" class="no-select no-action">
+                <div id="rotation-icon">
+                <!-- rotate-cw from Feather icon -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rotate-cw"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                </div>
+            </div>
+            <studio-axis id="ruler-marks" class="no-select no-action" orientation="v" ticks='lr' major-length="25%"
+                minor-length="10%"></studio-axis>
+        </div>
+        <!-- Drawing canvas, witdth and height are set in drawing-canvas.js -->
+        <canvas id="drawing-canvas"></canvas>
+    </div>
+</div>
+<!-- Tools -->
+<div id="tools" class="studio-row">
+    <!-- Color palette, svg icons from the edit-3 Feather icon -->
+    <div class="red eg-color-patch eg-button no-select no-action"><div hidden class="eg-color-icon no-select no-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    </div></div>
+    <div class="orange eg-color-patch eg-button no-select no-action"><div hidden class="eg-color-icon no-select no-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    </div></div>
+    <div class="mint eg-color-patch eg-button no-select no-action"><div hidden class="eg-color-icon no-select no-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    </div></div>
+    <div class="azure eg-color-patch eg-button no-select no-action"><div hidden class="eg-color-icon no-select no-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    </div></div>
+    <div class="violet eg-color-patch eg-button no-select no-action"><div hidden class="eg-color-icon no-select no-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit-3"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
+    </div></div>
+    <!-- Clear button, from the x Feather icon -->
+    <div id="clear" class="gray eg-button no-select no-action"><div id="clear-icon" class="eg-action-icon no-select no-action">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </div></div>
+</div>

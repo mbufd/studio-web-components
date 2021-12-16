@@ -1,0 +1,139 @@
+<h3>Attributes and properties</h3>
+All attributes have a corresponding property named using the camel case convention.
+<div class="text">
+    <div class="site-api-item site-api-attribute">on</div>
+    <div class="site-api-item-description">
+        The <code class="site-code">on</code> boolean attribute and property
+        are used to access the on or off state of the LED.
+        <div class="uk-margin-top">
+            See <code class="site-code">normalized-intensity</code>
+            below for how you can access the intensity of the LED when it is on.
+        </div>
+    </div>
+
+    <div class="site-api-item site-api-attribute">clikable</div>
+    <div class="site-api-item-description">
+        The <code class="site-code">clikable</code> boolean attribute and property
+        are used to access the clickable state of the LED.
+        <div class="uk-margin-top">
+            It is not set by default. When set, the LED will emit standard <code class="site-code">onclick</code> events.
+        </div>
+    </div>
+
+    <div class="site-api-item site-api-attribute">normalized-intensity (normalizedIntensity)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">normalized-intensity</code> attribute
+        to access the normalized intensity of the LED
+        from <code class="site-code">0</code>
+        to <code class="site-code">1</code>.
+        <div class="uk-margin-top">
+            A normalized intensity of <code class="site-code">0</code> matches
+            the value of <code class="site-code">min-intensity</code>,
+            while an intensity of <code class="site-code">1</code>
+            matches the value of <code class="site-code">max-intensity</code>.
+        </div>
+        <div class="uk-margin-top">
+            Intensity is ignored when the LED is off.
+        </div>
+    </div>
+
+    <div class="site-api-item site-api-attribute">min-intensity (minIntensity)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">min-intensity</code> attribute
+        to access the minimum intensity of the LED when it is on.
+        <div class="uk-margin-top">
+            The value is an intensity ratio expressed as a percentage of
+            lightness relative to the color indicated by the
+            <code class="site-code">--studio-surface-color</code> CSS custom property.
+            Default is <code class="site-code">100</code>. The
+            value can be set to higher than 100 in order to brighten up the LED.
+        </div>
+    </div>
+
+    <div class="site-api-item site-api-attribute">max-intensity (maxIntensity)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">max-intensity</code> attribute
+        to access the maximum intensity of the LED when it is on.
+        <div class="uk-margin-top">
+            The value is an intensity ratio expressed as a percentage of
+            lightness relative to the color indicated by the
+            <code class="site-code">--studio-surface-color</code> CSS custom property.
+            Default is <code class="site-code">150</code>. The
+            value can be set to higher than 100 in order to brighten up the LED.
+        </div>
+    </div>
+
+    <div class="site-api-item site-api-attribute">corners</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">corners</code> attribute
+        to access the type of corners for the LED.
+        <div class="uk-margin-top">
+            Allowed values are <code class="site-code">rounded</code>
+            and <code class="site-code">angled</code>. 
+            Default is <code class="site-code">rounded</code>.
+        </div>
+    </div>
+</div>
+
+<h3>CSS custom properties</h3>
+<div class="text">
+    <div class="site-api-item site-api-css">--studio-width</div>
+    <div class="site-api-item-description">
+        The LED's width. 
+        Default is <code class="site-code">var(--studio-size-3u)</code>.
+    </div>
+    <div class="site-api-item site-api-css">--studio-height</div>
+    <div class="site-api-item-description">
+        The LED's height.
+        Default is the specified width.
+    </div>
+    <div class="site-api-item site-api-css">--studio-led-off-opacity</div>
+    <div class="site-api-item-description">
+        The LED opacity when it is fully off. Must be a value
+        between 0 and 1. Default is <code class="site-code">0.2</code>.
+    </div>
+    <div class="site-api-item site-api-css">--studio-border-color</div>
+    <div class="site-api-item-description">
+        The border color for the LED.
+    </div>
+    <div class="site-api-item site-api-css">--studio-border-width</div>
+    <div class="site-api-item-description">
+        The thickness of the LED's border. This does not change
+        the size of the LED because the border expands inward rather
+        than outward.
+    </div>
+    <div class="site-api-item site-api-css">--studio-surface-color</div>
+    <div class="site-api-item-description">
+        The surface color for the LED.
+    </div>
+</div>
+
+<h3>Parts</h3>
+<div class="text">
+    <div class="site-api-item site-api-part">surface</div>
+    <div class="site-api-item-description">
+        Use this part to style the surface of the LED.
+    </div>
+    <div class="site-api-item site-api-part">border</div>
+    <div class="site-api-item-description">
+        Use this part to style the border of the LED.
+    </div>
+</div>
+
+<h3>Slots</h3>
+<div class="text">
+    <div class="site-api-item site-api-slot">Default slot</div>
+    <div class="site-api-item-description">
+        Content in the default slot will display on top of the surface.
+    </div>
+</div>
+
+<h3>Events</h3>
+<div class="text">
+    No special event.
+</div>
+
+<h3>Methods</h3>
+<div class="text">
+    No special method.
+</div>

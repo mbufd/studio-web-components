@@ -1,0 +1,65 @@
+<h4>Uniform surface color</h4>
+<div class="text">
+    Use the <code class="site-code">uniform</code> attribute to set
+    the surface of pads to a uniform color while retaining the surface
+    color during interactions. 
+    <div class="uk-margin-top">
+        This works great in designs where you want a uniform color across 
+        a set of pads while showing specific colors for specific 
+        pads when they are interacted with.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <studio-pad uniform>Uniform
+                            <div slot="secondary">
+                                <div>Hover me</div>
+                            </div>
+                        </studio-pad>
+                        <studio-pad uniform selected>Uniform
+                            <div slot="secondary">Selected</div>
+                        </studio-pad>
+                        <studio-pad uniform>Uniform</studio-pad>
+                    </div>
+                </div>
+            </li>
+            <li id="uniform-color-html"></li>
+        </ul>
+    </div>
+
+    <div class="uk-margin-top">
+        The default uniform color is a neutral gray but you can override it using the
+        <code class="site-code">--studio-uniform-color</code> CSS custom property.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                    <studio-pad uniform style="--studio-uniform-color: #9d94c7;">
+                        Uniform
+                        <div slot="secondary">Custom color</div>
+                    </studio-pad>
+                    <studio-pad selected uniform style="--studio-uniform-color: #9d94c7;">
+                        Uniform
+                        <div slot="secondary">Custom color
+                          <div class="mt-2u">Selected</div>
+                        </div>
+                    </studio-pad>
+                </div>
+                </div>
+            </li>
+            <li id="uniform-override-html"></li>
+        </ul>
+    </div>
+</div>

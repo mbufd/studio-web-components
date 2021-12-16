@@ -1,0 +1,14 @@
+{
+    "root": "lib",
+    "inputs": [
+        "axis.js",
+        "label.js",
+        "led.js",
+        "pad.js",
+        "slider.js",
+        "studio-web-components.js"
+    ],
+    "production": true,
+    "debug": true,
+    "watch": true
+}

@@ -1,0 +1,272 @@
+<h3>Attributes and properties</h3>
+All attributes have a corresponding property named using the camel case convention.
+<div class="text">
+    <!-- animation -->
+    <div class="site-api-item site-api-attribute">animation</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">animation</code> attribute or property
+        to set the animation speed when
+        <code class="site-code">no-direct</code>
+        (<code class="site-code">noDirect</code>) is set.
+        <div class="uk-margin-top">
+            The value is in milliseconds.
+            A value of <code class="site-code">0</code> or less
+            disables the animation.
+        </div>
+    </div>
+    <!-- disabled -->
+    <div class="site-api-item site-api-attribute">disabled</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">disabled</code> attribute or property
+        to disable interactions with the slider.
+    </div>
+    <!-- end-value -->
+    <div class="site-api-item site-api-attribute">end-value (endValue)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">end-value</code> attribute
+        or the <code class="site-code">endValue</code> property
+        to access the end value of the slider.
+        <div class="uk-margin-top">
+            The end value is the top bound of a vertical slider
+            or the right bound of an horizontal slider.
+        </div>
+    </div>
+    <!-- no-direct -->
+    <div class="site-api-item site-api-attribute">no-direct (noDirect)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">no-direct</code> attribute
+        or the <code class="site-code">noDirect</code> property
+        to disable direct setting of the slider by pressing
+        on the slider's surface.
+    </div>
+    <!-- orientation -->
+    <div class="site-api-item site-api-attribute">orientation</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">orientation</code> attribute or property
+        to configure the orientation of the slider.
+        <div class="uk-margin-top">
+            Use <code class="site-code">h</code> for horizontal,
+            use <code class="site-code">v</code> for vertical.
+        </div>
+        <div class="uk-margin-top">
+            The default vertical.
+        </div>
+    </div>
+    <!-- start-value -->
+    <div class="site-api-item site-api-attribute">start-value (startValue)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">start-value</code> attribute
+        or the <code class="site-code">startValue</code> property
+        to access the start value of the slider.
+        <div class="uk-margin-top">
+            The start value is the bottom bound of a vertical slider
+            or the left bound of an horizontal slider.
+        </div>
+    </div>
+    <!-- step-value -->
+    <div class="site-api-item site-api-attribute">step</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">step</code> attribute or property
+        to access the quantization increment.
+        The slider's value will be a multiple of  
+        <code class="site-code">step</code> unless it is set to 
+        <code class="site-code">0</code>, in which case no quantization occurs.
+        <div class="uk-margin-top">
+            Default is <code class="site-code">0</code>. 
+        </div>
+    </div>
+    <!-- uniform -->
+    <div class="site-api-item site-api-attribute">uniform</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">uniform</code> attribute or property
+        to use <code class="site-code">--studio-uniform-color</code> as the
+        color of the surface at rest. The color of the slider remains as specified
+        using the <code class="site-code">--studio-surface-color</code> when
+        the slider is interacted with.
+    </div>
+    <!-- value -->
+    <div class="site-api-item site-api-attribute">value</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">value</code> attribute or property
+        to access the value of the slider.
+        <div class="uk-margin-top">
+            The value is between <code class="site-code">start-value</code>
+            (<code class="site-code">startValue</code>)
+            and <code class="site-code">end-value</code>
+            (<code class="site-code">startValue</code>).
+        </div>
+        <div class="uk-margin-top">
+            The default value is <code class="site-code">0</code>.
+        </div>
+    </div>
+</div>
+
+<h3>CSS custom properties</h3>
+<div class="text">
+    <!-- length -->
+    <div class="site-api-item site-api-css">--studio-length</div>
+    <div class="site-api-item-description">
+        The length of the slider. This corresponds to the width if
+        the label is horizontal, or to the height if it is vertical.
+        See the <code class="site-code">orientation</code> attribute.
+    </div>
+    <!-- thickness -->
+    <div class="site-api-item site-api-css">--studio-thickness</div>
+    <div class="site-api-item-description">
+        The thickness of the slider. This corresponds to the height if
+        the label is horizontal, or to the width if it is horizontal.
+        See the <code class="site-code">orientation</code> attribute.
+    </div>
+    <!-- cursor size -->
+    <div class="site-api-item site-api-css">--studio-cursor-size</div>
+    <div class="site-api-item-description">
+        The size of the slider's cursor, on the length axis
+        of the slider. Default is
+        <code class="site-code">--studio-size-1b</code>.
+    </div>
+    <!-- border size -->
+    <div class="site-api-item site-api-css">--studio-border-size</div>
+    <div class="site-api-item-description">
+        The size of the sides of the slider. Default is
+        <code class="site-code">--studio-size-1u</code>.
+    </div>
+    <!-- font size -->
+    <div class="site-api-item site-api-css">--studio-font-size</div>
+    <div class="site-api-item-description">
+        The font size for content of the slider. Default is
+        <code class="site-code">--studio-size-font-xs</code>.
+    </div>
+    <!-- surface color -->
+    <div class="site-api-item site-api-css">--studio-surface-color</div>
+    <div class="site-api-item-description">
+        The surface color.
+    </div>
+    <!-- inner color -->
+    <div class="site-api-item site-api-css">--studio-inner-surface-color</div>
+    <div class="site-api-item-description">
+        The inner surface color.
+        The inner surface is inside the surface, within margin.
+    </div>
+    <!-- cursor range color -->
+    <div class="site-api-item site-api-css">--studio-cursor-range-color</div>
+    <div class="site-api-item-description">
+        The color for the cursor range area.
+        The cursor rage is inside the inside surface, but only
+        extends to where the center of the cursor extends.
+    </div>
+    <!-- accent color -->
+    <div class="site-api-item site-api-css">--studio-accent-color</div>
+    <div class="site-api-item-description">
+        The accent color. A single color applies to
+        both sides of the slider.
+    </div>
+    <!-- uniform color -->
+    <div class="site-api-item site-api-css">--studio-uniform-color</div>
+    <div class="site-api-item-description">
+        The uniform color to use when applying the
+        <code class="site-code">uniform</code> attribute.
+    </div>
+    <!-- content color -->
+    <div class="site-api-item site-api-css">--studio-content-color</div>
+    <div class="site-api-item-description">
+        The content (text) color for the slider.
+    </div>
+</div>
+
+<h3>Parts</h3>
+<div class="text">
+    <div class="site-api-item site-api-part">inner-surface</div>
+    <div class="site-api-item-description">
+        Use this part to style the main area inside the label.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-part">label-start</div>
+    <div class="site-api-item-description">
+        Use this part to style label area at the bottom
+        of a vertical slider or on the left of an horizontal
+        slider.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-part">label-end</div>
+    <div class="site-api-item-description">
+        Use this part to style label area at the top
+        of a vertical slider or on the right of an horizontal
+        slider.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-part">accent-tl</div>
+    <div class="site-api-item-description">
+        Use this part to style side area on the left
+        of a vertical slider or at the top of an horizontal
+        slider.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-part">accent-br</div>
+    <div class="site-api-item-description">
+        Use this part to style side area on the right
+        of a vertical slider or at the bottom of an horizontal
+        slider.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-part">cursor</div>
+    <div class="site-api-item-description">
+        Use this part to style the slider's cursor.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-part">cursor-decoration</div>
+    <div class="site-api-item-description">
+        Use this part to style decoration inside the slider's cursor.
+    </div>
+</div>
+
+<h3>Slots</h3>
+<div class="text">
+    <div class="site-api-item site-api-slot">Default slot</div>
+    <div class="site-api-item-description">
+        Content in the default slot will display
+        in the main area (inner surface).
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-slot">label-start</div>
+    <div class="site-api-item-description">
+        Use this slot to place content in the label area
+        at the bottom of a vertical slider or on the left
+        of an horizontal slider.
+    </div>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-slot">label-end</div>
+    <div class="site-api-item-description">
+        Use this slot to place content in the label area
+        at the top of a vertical slider or on the right
+        of an horizontal slider.
+    </div>
+</div>
+
+<h3>Events</h3>
+<div class="text">
+    <div class="site-api-item site-api-event">studio-slider-value</div>
+    <div class="site-api-item-description">
+        Generated when the value of the slider changes.
+    </div>
+    <div class="site-api-item site-api-event">studio-slider-state</div>
+    <div class="site-api-item-description">
+        Generated when the up or down state of the slider changes.
+    </div>
+    <div class="site-api-item site-api-event">studio-slider-bounds</div>
+    <div class="site-api-item-description">
+        Generated when the bounds of the slider change.
+    </div>
+</div>
+
+<h3>Methods</h3>
+<div class="text">
+    No special method.
+</div>

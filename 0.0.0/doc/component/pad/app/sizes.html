@@ -1,0 +1,85 @@
+<h3 id="sizes">Sizes</h3>
+<div class="text">
+    You can set the width and the height of a pad using the
+    <code class="site-code">--studio-width</code> and
+    <code class="site-code">--studio-height</code> CSS custom properties.
+    The minium size is <code class="site-code">--studio-size-1b</code>.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-pad style="--studio-width: var(--studio-size-5b);
+                    --studio-height: var(--studio-size-3b);">
+                      5b &times; 3b
+                    </studio-pad>
+                </div>
+            </li>
+            <li id="pad-size-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Pad layout</h4>
+<div class="text">
+    It's easy to create interlocking patterns of pads using
+    <code class="site-code">studio-row</code>
+    and <code class="site-code">studio-column</code>.
+    <div class="uk-margin-top">
+        See the <a href="layout">Layout</a> chapter for details.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom hscroll">
+                    <div class="studio-row">
+                        <div class="studio-column">
+                            <div class="studio-row">
+                                <div class="studio-column">
+                                    <div class="studio-row">
+                                        <div class="studio-column">
+                                            <div class="studio-row">
+                                                <div class="studio-column">
+                                                    <div class="studio-row">
+                                                        <studio-pad style="--studio-width: var(--studio-size-1b);
+                                                    --studio-height: var(--studio-size-1b);"></studio-pad>
+                                                        <studio-pad uniform style="--studio-width: var(--studio-size-1b);
+                                                    --studio-height: var(--studio-size-1b);"></studio-pad>
+                                                    </div>
+                                                    <studio-pad style="--studio-width: var(--studio-size-2b);
+                                                --studio-height: var(--studio-size-1b);"></studio-pad>
+                                                </div>
+                                                <studio-pad uniform style="--studio-width: var(--studio-size-1b);
+                                            --studio-height: var(--studio-size-2b);">
+                                                </studio-pad>
+                                            </div>
+                                            <studio-pad style="--studio-width: var(--studio-size-3b);
+                                        --studio-height: var(--studio-size-1b);"></studio-pad>
+                                        </div>
+                                        <studio-pad uniform style="--studio-width: var(--studio-size-1b);
+                                    --studio-height: var(--studio-size-3b);">
+                                        </studio-pad>
+                                    </div>
+                                    <studio-pad style="--studio-width: var(--studio-size-4b);
+                                --studio-height: var(--studio-size-1b);"></studio-pad>
+                                </div>
+                                <studio-pad uniform style="--studio-width: var(--studio-size-1b);
+                             --studio-height: var(--studio-size-4b);"></studio-pad>
+                            </div>
+                        </div>
+                        <studio-pad style="--studio-width: var(--studio-size-4b);
+                             --studio-height: var(--studio-size-4b);"></studio-pad>
+                    </div>
+                </div>
+            </li>
+            <li id="pad-layout-html"></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,52 @@
+@import url('../../site.css');
+@import url('./app/example/example.css');
+
+ul {
+    margin: 0;
+}
+.label-class {
+    --studio-length: var(--studio-size-2b); 
+    --studio-surface-color: var(--studio-blueberry);
+}
+
+#filter-heading {
+    --studio-thickness: var(--studio-size-4u); 
+    --studio-length: var(--studio-size-6b); 
+    --studio-surface-color: var(--studio-indigo-night);
+}
+.filter-label {
+    --studio-thickness: var(--studio-size-3u); 
+    --studio-length: var(--studio-size-2b); 
+    --studio-surface-color: transparent;
+}
+
+.square-3b {
+    --studio-width: var(--studio-size-3b);
+    --studio-height: var(--studio-size-3b);
+}
+
+.led-label {
+    --studio-surface-color: var(--studio-turquoise);
+    --studio-border-color: transparent;
+    --studio-width: var(--studio-size-2b);
+    --studio-height: var(--studio-size-2u);
+}
+
+#custom-outer-surface::part(outer-surface),
+#custom-inner-surface::part(inner-surface) {
+    background: linear-gradient(
+        var(--studio-surface-color),
+        var(--studio-turquoise));
+}
+
+.composed-surface::part(outer-surface) {
+    background: linear-gradient(
+        var(--studio-surface-color),
+        var(--studio-turquoise));    
+}
+.composed-surface::part(inner-surface) {
+    background: radial-gradient(hsla(var(--studio-hue-turquoise), 100%, 80%, .2) 8%, transparent);
+}
+.composed-surface::part(inner-surface):hover {
+    background: radial-gradient(rgba(255,255,255,.3) 8%, transparent);
+}

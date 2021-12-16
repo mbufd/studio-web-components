@@ -1,0 +1,98 @@
+<h3>Configuring the Vue.js application</h3>
+<div class="text">
+    This chapter comes with a full Vue.js project in the 
+    <a target="_blank" href="https://github.com/mbufd/studio-integration-samples">Studiö integration code base</a>.
+    The main steps in configuring your Vue.js application to use
+    the Studiö Web Components are explained here.
+    <div class="uk-margin-top">
+        If you are new to Vue.js, please refer to the <a target="_blank" href="https://v3.vuejs.org/">Vue.js documentation</a>.
+    </div>
+    <div class="uk-margin-top">
+        In this chapter we assume usage of Vue 3 with TypeScript.
+    </div>
+</div>
+
+<h4>Install the Studiö Web Components</h4>
+<div class="text">
+    Use <code class="site-code">npm install</code> to install the 
+    Studiö Web Components in your project.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">npm install</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="npm-install"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Custom elements schema</h4>
+<div class="text">
+    Indicate which tags are custom elements in your build. 
+    This is needed for any Web Component custom element and does not only apply to Studiö.
+    <div class="uk-margin-top">
+        Please refer to 
+        <a target="_blank" href="https://v3.vuejs.org/guide/web-components.html#using-custom-elements-in-vue">Using Custom Elements in Vue</a>
+        for details. Here we demonstrate setting the options in the <code class="site-code">vue.config.js</code> file.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">vue.config.js</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="vue-config-js"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Importing the components</h4>
+<div class="text">
+    Add an import of the Studiö Web Components in your <code class="site-code">App.vue</code>.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">App.vue</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="app-vue"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Fonts</h4>
+<div class="text">
+    Studiö uses the <a target="_blank" href="https://fonts.google.com/specimen/Bai+Jamjuree">Bai Jamjuree</a> 
+    font by default but you need to import it first 
+    in the unscoped <code class="site-code">&lt;style&gt;</code> section 
+    of your <code class="site-code">App.vue</code> file.
+    See the <a href="styling">Styling</a> chapter if you intend to use a different font.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">App.vue</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="fonts-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Importing the Studiö styles</h4>
+<div class="text">
+    Import the Studiö <code class="site-code">css</code> files in 
+    your <code class="site-code">App.vue</code>.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">App.vue</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="studio-styles"></li>
+        </ul>
+    </div>
+    <div class="site-note uk-margin-top">
+        You many not need all of the above but should at least include
+        one of either <code class="site-code">studio-scale-100.css</code>
+        or <code class="site-code">studio-scale-125.css</code>, 
+        as well as one of either <code class="site-code">studio-light.css</code>
+        or <code class="site-code">studio-dark.css</code>, based on 
+        what your application's requirements.
+    </div>
+</div>

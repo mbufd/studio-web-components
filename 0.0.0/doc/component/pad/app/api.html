@@ -1,0 +1,177 @@
+<h3>Attributes and properties</h3>
+All attributes have a corresponding property named using the camel case convention.
+<div class="text">
+    <div class="site-api-item site-api-attribute">bold</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">bold</code> attribute or property
+        to turn the text in the default slot to bold.
+    </div>
+    <div class="site-api-item site-api-attribute">inset-label (insetLabel)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">inset-label</code> attribute or 
+        the <code class="site-code">insetLabel</code> property 
+        to move all labels within a margin of the outer surface.
+    </div>
+    <div class="site-api-item site-api-attribute">selected</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">selected</code> attribute or property
+        to highlight the pad as selected.
+    </div>
+    <div class="site-api-item site-api-attribute">uniform</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">uniform</code> attribute or property
+        to use <code class="site-code">--studio-uniform-color</code> as the 
+        color of the surface at rest. The color of the pad remains as specified 
+        using the <code class="site-code">--studio-surface-color</code> when 
+        the pad is hovered, selected or active.
+    </div>
+    <div class="site-api-item site-api-attribute">swipe</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">swipe</code> attribute or property
+        to enable swiping on the pad. This will generate 
+        <code class="site-code">studio-pad-swipe</code> 
+        <a href="component/pad/#api-events">events</a> when the user swipes on the pad.
+    </div>
+    <div class="site-api-item site-api-attribute">xy-fx (xyFx)</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">xy-fx</code> attribute or 
+        the <code class="site-code">xfFx</code> property
+        to configure a visual effect that will show when the user 
+        clicks or swipes on a pad.
+        <div class="uk-margin-top">
+            Use <code class="site-code">xy</code> to enable the effect in both 
+            the X and Y directions,
+            use <code class="site-code">x</code> to enable only on X
+            or use <code class="site-code">y</code> to enable only on Y.
+        </div>
+        <div class="uk-margin-top">
+            When the <code class="site-code">swipe</code> attribute is present, 
+            the effects will follow the swipe movement. Otherwise it the effect
+            will stand still at the point where the click occured.
+        </div>
+    </div>
+</div>
+
+<h3>CSS custom properties</h3>
+<div class="text">
+    <div class="site-api-item site-api-css">--studio-content-color</div>
+    <div class="site-api-item-description">
+        The color of the text content for both the default and the 
+        <code class="site-code">secondary</code> <a href="component/pad/#api-slots">slots</a>.
+    </div>
+    <div class="site-api-item site-api-css">--studio-fx-color</div>
+    <div class="site-api-item-description">
+        The color of the XY effects when they are enabled using the 
+        <code class="site-code">xy-fx</code> attribute or the 
+        <code class="site-code">xyFx</code> property.
+    </div>
+    <div class="site-api-item site-api-css">--studio-height</div>
+    <div class="site-api-item-description">
+        The height of the pad.
+    </div>
+    <div class="site-api-item site-api-css">--studio-highlight-color</div>
+    <div class="site-api-item-description">
+        The color of the outer surface highlight when the pad 
+        is interacted with.
+    </div>
+    <div class="site-api-item site-api-css">--studio-selected-highlight-color</div>
+    <div class="site-api-item-description">
+        The color of the inner surface highlight when the pad has the 
+        <code class="site-code">selected</code> attribute.
+    </div>
+    <div class="site-api-item site-api-css">--studio-surface-color</div>
+    <div class="site-api-item-description">
+        The color of the surface, applicable to both the outer 
+        and the inner surface.
+    </div>
+    <div class="site-api-item site-api-css">--studio-uniform-color</div>
+    <div class="site-api-item-description">
+        The uniform color to use when applying the 
+        <code class="site-code">uniform</code> attribute.
+    </div>
+    <div class="site-api-item site-api-css">--studio-width</div>
+    <div class="site-api-item-description">
+        The width of the pad.
+    </div>
+</div>
+
+<h3>Parts</h3>
+<div class="text">
+The surface of a part is split in two layers: 
+the <code class="site-code">outer-surface</code>
+and the <code class="site-code">inner-surface</code>. 
+The inner surface is a layer above the outer surface and 
+is smaller by a margin. Both surfaces are visibile when 
+making the inner surface translucent. The outer surface 
+acts as a border when the inner surface is opaque.
+    <!-- outer-surface -->
+    <div class="site-api-item site-api-part">outer-surface</div>
+    <div class="site-api-item-description">
+        Use this part to style the outer surface of the label.
+        <div class="uk-margin-top site-note site-warning">
+            Using a border on the outer surface will alter 
+            the size of the pad and affect layouts when 
+            using <a href="sizes">block units</a>.
+        </div>
+    </div>
+    <!-- inner-surface -->
+    <div class="site-api-item site-api-part">inner-surface</div>
+    <div class="site-api-item-description">
+        Use this part to style the surface of the pad.
+    </div>
+</div>
+
+<h3 id="api-slots">Slots</h3>
+<div class="text">
+    <!-- default slot -->
+    <div class="site-api-item site-api-slot">Default slot</div>
+    <div class="site-api-item-description">
+        Content in the default slot will display on the inner-surface.
+        Text will wrap if too long.
+    </div>
+    <!-- secondary slot -->
+    <div class="site-api-item site-api-slot">Secondary slot</div>
+    <div class="site-api-item-description">
+        Content in the <code class="site-code">secondary</code> slot 
+        will display on the inner-surface, below the content of the 
+        default slot.
+    </div>
+</div>
+
+<h3 id="api-events">Events</h3>
+All pad events properties are as follows:
+<div class="uk-width-2xlarge site-code-section uk-margin-top">
+    <ul uk-tab>
+        <li><a href="#">Event properties</a></li>
+    </ul>
+    <ul class="uk-switcher">
+        <li id="event-properties-api-js"></li>
+    </ul>
+</div>
+<div class="text">
+    <div class="site-api-item site-api-event">studio-pad-down</div>
+    <div class="site-api-item-description">
+        Generated at the moment the pad is clicked or touched.
+        The state becomes down until a 
+        <code class="site-code">studio-pad-up</code> occurs.
+    </div>
+    <div class="site-api-item site-api-event">studio-pad-move</div>
+    <div class="site-api-item-description">
+        Generated when a movement is detected over the pad while 
+        the state is not down.
+    </div>
+    <div class="site-api-item site-api-event">studio-pad-up</div>
+    <div class="site-api-item-description">
+        Generated when the pad click or touch is released.
+    </div>
+    <div class="site-api-item site-api-event">studio-pad-swipe</div>
+    <div class="site-api-item-description">
+        Generated when a movement is detected over the pad while 
+        the state is down.
+    </div>
+</div>
+
+<h3>Methods</h3>
+<div class="text">
+    No special method.
+</div>

@@ -1,0 +1,175 @@
+@import './studio-base.css';
+@import './studio-color-base.css';
+
+/**
+* Color definitions fo the dark theme
+*/
+:host, 
+.studio-theme-dark {
+    /* Paper and ink for writing text */
+    --studio-paper-10: hsl(0,0%,8%); /* darkest paper */
+    --studio-paper-20: hsl(0,0%,13%); 
+    --studio-paper-30: hsl(0,0%,18%);
+    --studio-paper-40: hsl(0,0%,22%);
+    --studio-paper-50: hsl(0,0%,25%);
+    /* standardized tinter paper for hsl s and l */
+    --studio-paper-tint-s: 30%;
+    --studio-paper-10-tint-l: 8%;
+    --studio-paper-20-tint-l: 13%;
+    --studio-paper-30-tint-l: 18%;
+    --studio-paper-40-tint-l: 22%;
+    --studio-paper-50-tint-l: 25%;
+
+    --studio-ink-10: hsl(0,0%,85%); /* ink over darkest paper */
+    --studio-ink-20: hsl(0,0%,88%);
+    --studio-ink-30: hsl(0,0%,91%);
+    --studio-ink-40: hsl(0,0%,95%);
+    --studio-ink-50: hsl(0,0%,98%);
+
+    --studio-ink-11: hsl(0,0%,80%);
+    --studio-ink-21: hsl(0,0%,80%);
+    --studio-ink-31: hsl(0,0%,85%);
+    --studio-ink-41: hsl(0,0%,90%);
+    --studio-ink-51: hsl(0,0%,95%);
+
+    --studio-ink-12: hsl(0,0%,72%);
+    --studio-ink-22: hsl(0,0%,75%);
+    --studio-ink-32: hsl(0,0%,80%);
+    --studio-ink-42: hsl(0,0%,85%);
+    --studio-ink-52: hsl(0,0%,90%);
+
+    --studio-ink-13: hsl(0,0%,65%);
+    --studio-ink-23: hsl(0,0%,70%);
+    --studio-ink-33: hsl(0,0%,75%);
+    --studio-ink-43: hsl(0,0%,80%);
+    --studio-ink-53: hsl(0,0%,85%);
+
+    --studio-ink-14: hsl(0,0%,60%);
+    --studio-ink-24: hsl(0,0%,65%);
+    --studio-ink-34: hsl(0,0%,70%);
+    --studio-ink-44: hsl(0,0%,75%);
+    --studio-ink-54: hsl(0,0%,80%);
+
+    --studio-ink-15: hsl(0,0%,53%);
+    --studio-ink-25: hsl(0,0%,58%);
+    --studio-ink-35: hsl(0,0%,63%);
+    --studio-ink-45: hsl(0,0%,68%);
+    --studio-ink-55: hsl(0,0%,73%);
+
+    --studio-ink-16: hsl(0,0%,48%);
+    --studio-ink-26: hsl(0,0%,52%);
+    --studio-ink-36: hsl(0,0%,58%);
+    --studio-ink-46: hsl(0,0%,62%);
+    --studio-ink-56: hsl(0,0%,68%);
+
+    --studio-ink-17: hsl(0,0%,41%);
+    --studio-ink-27: hsl(0,0%,46%);
+    --studio-ink-37: hsl(0,0%,51%);
+    --studio-ink-47: hsl(0,0%,56%);
+    --studio-ink-57: hsl(0,0%,61%);
+
+    --studio-ink-18: hsl(0,0%,30%);
+    --studio-ink-28: hsl(0,0%,35%);
+    --studio-ink-38: hsl(0,0%,40%);
+    --studio-ink-48: hsl(0,0%,45%);
+    --studio-ink-58: hsl(0,0%,50%);
+
+    --studio-ink-19: hsl(0,0%,25%);
+    --studio-ink-29: hsl(0,0%,30%);
+    --studio-ink-39: hsl(0,0%,35%);
+    --studio-ink-49: hsl(0,0%,40%);
+    --studio-ink-59: hsl(0,0%,45%);
+
+    --studio-action-hue: 230;
+    --studio-action-ink-10: hsl(var(--studio-action-hue),100%,78%);
+    --studio-action-ink-highlight-10: hsl(var(--studio-action-hue),100%,88%);
+    --studio-action-ink-20: hsl(var(--studio-action-hue),100%,77%);
+    --studio-action-ink-highlight-20: hsl(var(--studio-action-hue),100%,87%);
+    --studio-action-ink-30: hsl(var(--studio-action-hue),100%,76%);
+    --studio-action-ink-highlight-30: hsl(var(--studio-action-hue),100%,86%);
+    --studio-action-ink-40: hsl(var(--studio-action-hue),100%,75%);
+    --studio-action-ink-highlight-40: hsl(var(--studio-action-hue),100%,85%);
+    --studio-action-ink-50: hsl(var(--studio-action-hue),100%,74%);
+    --studio-action-ink-highlight-50: hsl(var(--studio-action-hue),100%,84%);
+
+    /* Basic color set, made of the regular and desaturated colors */
+    /* Regular colors */
+    --studio-ink-light: var(--studio-ink-white);
+    --studio-red: hsl(var(--studio-hue-red), 100%, 55%);
+    --studio-tomato: hsl(var(--studio-hue-tomato), 100%, 55%);
+    --studio-tangerine: hsl(var(--studio-hue-tangerine), 100%, 55%);
+    --studio-orange: hsl(var(--studio-hue-orange), 100%, 55%);
+    --studio-lemon: hsl(var(--studio-hue-lemon), 100%, 47%);
+    --studio-lime: hsl(var(--studio-hue-lime), 100%, 45%);
+    --studio-mint: hsl(var(--studio-hue-mint), 100%, 45%);
+    --studio-green: hsl(var(--studio-hue-green), 100%, 40%);
+    --studio-turquoise: hsl(var(--studio-hue-turquoise), 100%, 40%);
+    --studio-azure: hsl(var(--studio-hue-azure), 100%, 55%);
+    --studio-blue: hsl(var(--studio-hue-blue), 100%, 55%);
+    --studio-indigo: hsl(var(--studio-hue-indigo), 100%, 63%);
+    --studio-violet: hsl(var(--studio-hue-violet), 100%, 60%);
+    --studio-purple: hsl(var(--studio-hue-purple), 100%, 60%);
+    --studio-pink: hsl(var(--studio-hue-pink), 100%, 45%);
+    --studio-magenta: hsl(var(--studio-hue-magenta), 100%, 50%);
+    /* Desaturated colors */
+    --studio-wine: hsl(var(--studio-hue-red), 40%, 45%);
+    --studio-cinnamon: hsl(var(--studio-hue-tomato), 40%, 45%);
+    --studio-chocolate: hsl(var(--studio-hue-tangerine), 40%, 45%);
+    --studio-caramel: hsl(var(--studio-hue-orange), 40%, 55%);
+    --studio-gold: hsl(var(--studio-hue-lemon), 40%, 60%);
+    --studio-olive: hsl(var(--studio-hue-lime), 40%, 45%);
+    --studio-leaf: hsl(var(--studio-hue-mint), 40%, 45%);
+    --studio-spruce: hsl(var(--studio-hue-green), 40%, 45%);
+    --studio-sea: hsl(var(--studio-hue-turquoise), 40%, 40%);
+    --studio-blueberry: hsl(var(--studio-hue-azure), 40%, 50%);
+    --studio-marine: hsl(var(--studio-hue-blue), 40%, 50%);
+    --studio-evening: hsl(var(--studio-hue-indigo), 40%, 50%);
+    --studio-grape: hsl(var(--studio-hue-violet), 40%, 50%);
+    --studio-mauve: hsl(var(--studio-hue-purple), 40%, 50%);
+    --studio-candy: hsl(var(--studio-hue-pink), 40%, 45%);
+    --studio-raspberry: hsl(var(--studio-hue-magenta), 40%, 50%);
+    /* Night color set */
+    --studio-ink-night: var(--studio-ink-white-200);
+    --studio-red-night: hsl(var(--studio-hue-red), 35%, 8%);
+    --studio-tomato-night: hsl(var(--studio-hue-tomato), 35%, 8%);
+    --studio-tangerine-night: hsl(var(--studio-hue-tangerine), 35%, 8%);
+    --studio-orange-night: hsl(var(--studio-hue-orange), 35%, 8%);
+    --studio-lemon-night: hsl(var(--studio-hue-lemon), 35%, 8%);
+    --studio-lime-night: hsl(var(--studio-hue-lime), 35%, 8%);
+    --studio-mint-night: hsl(var(--studio-hue-mint), 35%, 8%);
+    --studio-green-night: hsl(var(--studio-hue-green), 35%, 8%);
+    --studio-turquoise-night: hsl(var(--studio-hue-turquoise), 35%, 8%);
+    --studio-azure-night: hsl(var(--studio-hue-azure), 35%, 8%);
+    --studio-blue-night: hsl(var(--studio-hue-blue), 35%, 8%);
+    --studio-indigo-night: hsl(var(--studio-hue-indigo), 35%, 8%);
+    --studio-violet-night: hsl(var(--studio-hue-violet), 35%, 8%);
+    --studio-purple-night: hsl(var(--studio-hue-purple), 35%, 8%);
+    --studio-pink-night: hsl(var(--studio-hue-pink), 35%, 8%);
+    --studio-magenta-night: hsl(var(--studio-hue-magenta), 35%, 8%);
+    /* Flower color set */
+    --studio-ink-flower: var(--studio-ink-black-50);
+    --studio-red-flower: hsl(var(--studio-hue-red), 95%, 90%);
+    --studio-tomato-flower: hsl(var(--studio-hue-tomato), 100%, 90%);
+    --studio-tangerine-flower: hsl(var(--studio-hue-tangerine), 100%, 90%);
+    --studio-orange-flower: hsl(var(--studio-hue-orange), 100%, 90%);
+    --studio-lemon-flower: hsl(var(--studio-hue-lemon), 100%, 90%);
+    --studio-lime-flower: hsl(var(--studio-hue-lime), 100%, 90%);
+    --studio-mint-flower: hsl(var(--studio-hue-mint), 100%, 90%);
+    --studio-green-flower: hsl(var(--studio-hue-green), 100%, 90%);
+    --studio-turquoise-flower: hsl(var(--studio-hue-turquoise), 80%, 90%);
+    --studio-azure-flower: hsl(var(--studio-hue-azure), 100%, 90%);
+    --studio-blue-flower: hsl(var(--studio-hue-blue), 100%, 90%);
+    --studio-indigo-flower: hsl(var(--studio-hue-indigo), 100%, 90%);
+    --studio-violet-flower: hsl(var(--studio-hue-violet), 100%, 90%);
+    --studio-purple-flower: hsl(var(--studio-hue-purple), 100%, 90%);
+    --studio-pink-flower: hsl(var(--studio-hue-pink), 100%, 90%);
+    --studio-magenta-flower: hsl(var(--studio-hue-magenta), 100%, 92%);
+    /* Raven */
+    --studio-raven: hsl(0, 0%, 25%);
+    /* Carbon */
+    --studio-carbon: hsl(0, 0%, 33%);
+    /* Wolf */
+    --studio-wolf: hsl(0, 0%, 45%);
+    /* Silver */
+    --studio-silver: hsl(0, 0%, 60%);
+}

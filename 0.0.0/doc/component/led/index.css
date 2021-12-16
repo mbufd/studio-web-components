@@ -1,0 +1,72 @@
+@import url('../../site.css');
+@import url('./app/example/game-of-life.css');
+
+/* the simple initial demo */
+.demo-led::part(surface) {
+    box-shadow: inset 0 0 3px 1px var(--studio-spruce);
+}
+
+/* styling the surface part */
+.glow-surface::part(surface) {
+    background: radial-gradient(var(--studio-azure-flower), 55%, var(--studio-azure-night));
+}
+
+/* styling the border part */
+.dotted-border::part(border) {
+    border-style: dotted;
+    border-width: 1px;
+    border-color: var(--studio-ink-30);
+}
+.custom-corners::part(border),
+.custom-corners::part(surface) {
+    border-radius: var(--studio-size-1u);
+}   
+
+/* labeled led */
+studio-led .label {
+    font-family: var(--studio-font-family);
+    font-weight: 600;
+    line-height: 100%;
+    vertical-align: top;
+    font-size: var(--studio-size-font-xxs);
+    text-align: center;
+    color: white;
+    opacity: .8;
+}
+.labeled-led[on]::part(surface) {
+    border-radius: 0;
+    background: radial-gradient(var(--studio-lime-flower), 55%, var(--studio-spruce));
+}
+studio-led[on] .label {
+    color: var(--studio-spruce);
+    opacity: 1;
+}
+.icon {
+    vertical-align: top;
+    color: var(--studio-neutral);
+}
+
+.size-s {
+    --studio-width: var(--studio-size-2u);
+    --studio-height: var(--studio-size-2u);
+}
+.size-m {
+    --studio-width: var(--studio-size-3u);
+    --studio-height: var(--studio-size-3u);
+}
+.size-l {
+    --studio-width: var(--studio-size-4u);
+    --studio-height: var(--studio-size-4u);
+}
+.size-sl {
+    --studio-width: var(--studio-size-2u);
+    --studio-height: var(--studio-size-4u);
+}
+.size-ls {
+    --studio-width: var(--studio-size-4u);
+    --studio-height: var(--studio-size-2u);
+}
+
+.blue-border {
+    border: solid var(--studio-semantic-blue) 1px;
+}

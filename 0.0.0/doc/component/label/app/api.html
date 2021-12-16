@@ -1,0 +1,109 @@
+<h3>Attributes and properties</h3>
+All attributes have a corresponding property named using the camel case convention.
+<div class="text">
+    <!-- accent -->
+    <div class="site-api-item site-api-attribute">accent</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">accent</code> attribute or property
+        to configure if and how to display an accent color.
+        <div class="uk-margin-top">
+            Use <code class="site-code">s</code> to enable an accent only at the
+            start of the label,
+            use <code class="site-code">e</code> to enable an accent only at the
+            end of the label,
+            or use <code class="site-code">se</code> to enable accents at both
+            ends of the label.
+        </div>
+        <div class="uk-margin-top">
+            The default is no accent.
+        </div>
+        <div class="uk-margin-top">
+            See the <code class="site-code">--studio-accent-color</code> CSS custom property
+            for setting the color for the accent.
+        </div>
+    </div>
+    <!-- orientation -->
+    <div class="site-api-item site-api-attribute">orientation</div>
+    <div class="site-api-item-description">
+        Use the <code class="site-code">orientation</code> attribute or property
+        to configure the orientation of the label.
+        <div class="uk-margin-top">
+            Use <code class="site-code">h</code> for horizontal,
+            use <code class="site-code">90l</code> for sideways as rotated
+            90&deg; left from the horizontal,
+            or use <code class="site-code">90r</code> for sideways as rotated
+            90&deg; rigth from the horizontal .
+        </div>
+        <div class="uk-margin-top">
+            The default horizontal.
+        </div>
+    </div>
+</div>
+
+<h3>CSS custom properties</h3>
+<div class="text">
+    <!-- surface length -->
+    <div class="site-api-item site-api-css">--studio-length</div>
+    <div class="site-api-item-description">
+        The length of the label. This corresponds to the width if
+        the label is horizontal, or to the height if it is sideways.
+        See the <code class="site-code">orientation</code> attribute.
+    </div>
+    <!-- surface thickness -->
+    <div class="site-api-item site-api-css">--studio-thickness</div>
+    <div class="site-api-item-description">
+        The thickness of the label. This corresponds to the height if
+        the label is horizontal, or to the width if it is sideways.
+        See the <code class="site-code">orientation</code> attribute.
+    </div>
+    <!-- surface color -->
+    <div class="site-api-item site-api-css">--studio-surface-color</div>
+    <div class="site-api-item-description">
+        The surface color for the label.
+    </div>
+    <!-- content color -->
+    <div class="site-api-item site-api-css">--studio-content-color</div>
+    <div class="site-api-item-description">
+        The content (text) color for the label.
+    </div>
+    <!-- accent color -->
+    <div class="site-api-item site-api-css">--studio-accent-color</div>
+    <div class="site-api-item-description">
+        The accent color for the label. A single color applies to
+        both the start and end accents.
+        See the <code class="site-code">accent</code> attribute for how to enable accents.
+    </div>
+    <!-- accent length -->
+    <div class="site-api-item site-api-css">--studio-label-accent-length</div>
+    <div class="site-api-item-description">
+        The length of the accent for the label. A single length applies to
+        both the start and end accents.
+        See the <code class="site-code">accent</code> attribute for how to enable accents.
+    </div>
+</div>
+
+<h3>Parts</h3>
+<div class="text">
+    <div class="site-api-item site-api-part">surface</div>
+    <div class="site-api-item-description">
+        Use this part to style the surface of the label.
+    </div>
+</div>
+
+<h3>Slots</h3>
+<div class="text">
+    <div class="site-api-item site-api-slot">Default slot</div>
+    <div class="site-api-item-description">
+        Content in the default slot will display on top of the surface.
+    </div>
+</div>
+
+<h3>Events</h3>
+<div class="text">
+    No special event.
+</div>
+
+<h3>Methods</h3>
+<div class="text">
+    No special method.
+</div>

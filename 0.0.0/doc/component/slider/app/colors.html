@@ -1,0 +1,151 @@
+<h3 id="colors">Colors</h3>
+<h4>Surface color</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-surface-color</code> CSS custom property to set
+    the color of a slider.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <studio-slider orientation="h" value=".5" style="--studio-surface-color: var(--studio-spruce)">
+                        </studio-slider>
+                        <studio-slider orientation="h" value=".5" style="--studio-surface-color: darkslateblue">
+                        </studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="surface-color-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Inner surface color</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-inner-surface-color</code> CSS custom property to set
+    the color of the inner surface.
+    The ends of the cursor bump into the limits of the inner surface.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider orientation="h" value=".5"
+                        style="--studio-inner-surface-color: var(--studio-spruce)">
+                    </studio-slider>
+                </div>
+            </li>
+            <li id="inner-surface-color-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Cursor range color</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-cursor-range-color</code> CSS custom property to set
+    the color of the cursor range.
+    The center of the cursor bumps into the limits of the inner surface.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider orientation="h" value=".5" style="--studio-cursor-range-color: var(--studio-spruce)">
+                    </studio-slider>
+                </div>
+            </li>
+            <li id="cursor-range-color-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Cursor color</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-cursor-color</code> CSS custom property to set
+    the cursor color of a slider.
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <studio-slider orientation="h" style="--studio-cursor-color: var(--studio-grape)"></studio-slider>
+                        <studio-slider orientation="h" style="--studio-cursor-color: #493366"></studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="cursor-color-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Accent color</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-accent-color</code> CSS custom property to set
+    the accent color for the sides of a slider.
+    <div class="uk-margin-top">
+        By default the cursor color is the same as the accent color. See above for
+        how to modify the cursor color.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <studio-slider orientation="h" style="--studio-accent-color: var(--studio-candy)">
+                        </studio-slider>
+                        <studio-slider orientation="h" style="--studio-accent-color: darkturquoise"></studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="accent-color-html"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Uniform color</h4>
+<div class="text">
+    Use the <code class="site-code">uniform</code> attribute or property
+    to set the color of the slider to the uniform color while retaining
+    the surface color for interactions.
+    <div class="uk-margin-top">
+        This works great in designs where you want a uniform color across
+        a set of sliders while showing specific colors for specific
+        sliders during interactions.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-column">
+                        <studio-slider uniform orientation="h"></studio-slider>
+                        <studio-slider uniform orientation="h" style="--studio-inner-surface-color: var(--studio-raspberry);">
+                        </studio-slider>
+                    </div>
+                </div>
+            </li>
+            <li id="uniform-color-html"></li>
+        </ul>
+    </div>
+</div>

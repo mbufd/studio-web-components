@@ -1,0 +1,210 @@
+<h3 id="size">Sizes</h3>
+<div class="text">
+    Use the <code class="site-code">--studio-length</code> and
+    <code class="site-code">--studio-thickness</code>
+    CSS custom properties to set the length and thickness of the slider.
+    You can also modify the size of the cursor and the size of the
+    sides of the slider, as described below.
+</div>
+<h4>Length</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-length</code> to modify
+    the length of the slider.
+    The default length is <code class="site-code">--studio-size-5b</code>.
+    <div class="uk-margin-top">
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <div class="studio-row">
+                            <div class="studio-column">
+                                <studio-label class="co-1b">3b</studio-label>
+                                <studio-slider style="--studio-length: var(--studio-size-3b);">
+                                </studio-slider>
+                            </div>
+                            <div class="studio-column">
+                                <studio-label class="co-1b">4b</studio-label>
+                                <studio-slider style="--studio-length: var(--studio-size-4b);">
+                                </studio-slider>
+                            </div>
+                            <div class="studio-column">
+                                <studio-label class="co-1b">5b</studio-label>
+                                <studio-slider style="--studio-length: var(--studio-size-5b);">
+                                </studio-slider>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="length-html"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uk-margin-top">
+        With a horizontal slider, the length is the width of the slider.
+    </div>
+    <div class="uk-margin-top">
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <studio-slider orientation="h" style="--studio-length: var(--studio-size-4b);"></studio-slider>
+                    </div>
+                </li>
+                <li id="length-horizontal-html"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="site-note uk-margin-top scroll">
+        <div class="studio-row">
+            <studio-slider style="--studio-length: 80px;"></studio-slider>
+            <div style="margin: var(--studio-size-2u);">
+                The minimum length for a slider is <code class="site-code">--studio-size-2b</code>.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<h4>Thickness</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-thickness</code> to modify
+    the thickness of the slider.
+    The default thickness is <code class="site-code">--studio-size-1b</code>.
+    <div class="uk-margin-top">
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <div class="studio-row">
+                            <div class="studio-column">
+                                <studio-label class="co-5b">Thickness 1b</studio-label>
+                                <studio-slider orientation="h" style="--studio-thickness: var(--studio-size-1b);">
+                                </studio-slider>
+                                <studio-label class="co-5b">Thickness 2b</studio-label>
+                                <studio-slider orientation="h" style="--studio-thickness: var(--studio-size-2b);">
+                                </studio-slider>
+                                <studio-label class="co-5b">Thickness 7u</studio-label>
+                                <studio-slider orientation="h" style="--studio-thickness: var(--studio-size-7u);">
+                                </studio-slider>
+                            </div>
+                            <div class="studio-column">
+                                <studio-label class="co-2b">Thickness 2b</studio-label>
+                                <studio-slider style="--studio-thickness: var(--studio-size-2b);">
+                                    <studio-axis fit slot="cursor-range" major-length="40%" major-sections="5" orientation="v"></studio-axis>
+                                </studio-slider>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="thickness-html"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="uk-margin-top site-note scroll">
+        The minimum thickness for a slider is
+        <code class="site-code">--studio-size-4u</code>.
+        <div class="uk-margin-top">
+            <studio-slider orientation="h" style="--studio-thickness: var(--studio-size-4u);"></studio-slider>
+        </div>
+    </div>
+</div>
+
+<h4>Cursor</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-cursor-size</code> CSS custom property
+    to modify the size of the cursor along the length of the slider.
+    <div class="uk-margin-top">
+        The default cursor size is <code class="site-code">--studio-size-1b</code>
+    </div>
+    <div class="uk-margin-top">
+        The minimum cursor size is <code class="site-code">--studio-size-4u</code> and
+        the maxium size is a third of the slider's length.
+    </div>
+    <div class="uk-margin-top site-note">
+        A longer cursor has less dynamic range.
+    </div>
+    <div class="uk-margin-top">
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+            <ul uk-tab>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">Example</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <div class="studio-column">
+                            <div class="studio-column">
+                                <studio-label class="co-5b">MIN</studio-label>
+                                <div class="studio-row">
+                                    <studio-slider id="min-size-cursor-slider" orientation="h"
+                                        end-value="100" step="1" style="--studio-cursor-size: var(--studio-size-4u);">
+                                        <studio-axis fit slot="cursor-range" orientation="h" major-sections="2"></studio-axis>
+                                    </studio-slider>
+                                    <studio-label id="min-size-cursor-label" class="co-1b th-1b"></studio-label>
+                                </div>
+                            </div>
+                            <div class="studio-column">
+                                <studio-label class="co-5b">6u</studio-label>
+                                <div class="studio-row">
+                                    <studio-slider id="special-size-cursor-slider" orientation="h"
+                                        end-value="100" step="1" style="--studio-cursor-size: var(--studio-size-6u);">
+                                        <studio-axis fit slot="cursor-range" orientation="h" major-sections="2"></studio-axis>
+                                    </studio-slider>
+                                    <studio-label id="special-size-cursor-label" class="co-1b th-1b"></studio-label>
+                                </div>
+                            </div>
+                            <div class="studio-column">
+                                <studio-label class="co-5b">MAX</studio-label>
+                                <div class="studio-row">
+                                    <studio-slider id="max-size-cursor-slider" orientation="h"
+                                        end-value="100" step="1" style="--studio-cursor-size: var(--studio-size-8b);">
+                                        <studio-axis fit slot="cursor-range" orientation="h" major-sections="2"></studio-axis>
+                                    </studio-slider>
+                                    <studio-label id="max-size-cursor-label" class="co-1b th-1b"></studio-label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li id="cursor-size-html"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h4>Sides</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-border-size</code> CSS custom property to
+    modify the with of both sides of the slider.
+    <div class="uk-margin-top">
+        <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+            <ul uk-tab>
+                <li><a href="#">Example</a></li>
+                <li><a href="#">HTML</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li class="uk-active">
+                    <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                        <studio-slider orientation="h" style="--studio-border-size: var(--studio-size-2u);"></studio-slider>
+                    </div>
+                </li>
+                <li id="sides-html"></li>
+            </ul>
+        </div>
+    </div>
+
+</div>

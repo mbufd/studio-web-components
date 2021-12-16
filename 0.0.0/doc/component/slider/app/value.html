@@ -1,0 +1,70 @@
+<h3 id="value">Slider value</h3>
+<div class="text">
+    The slider has a value within the bounds you define.
+    By default the bounds are normalized from <code class="site-code">0</code>
+    to <code class="site-code">1</code> and the initial value is
+    <code class="site-code">0</code>.
+    <div class="uk-margin-top">
+        Use the <code class="site-code">value</code> attribute or property
+        to set the value.
+    </div>
+    <div class="uk-width-2xlarge site-code-section text uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="studio-row">
+                        <div class="studio-column" style="margin-top: var(--studio-size-1u);">
+                            <studio-label class="co-5b">INITIAL VALUE &nbsp;&nbsp;0</studio-label>
+                            <studio-slider orientation="h" value="0"></studio-slider>
+                            <studio-label class="co-5b">INITIAL VALUE &nbsp;&nbsp;.75</studio-label>
+                            <studio-slider orientation="h" value=".75"></studio-slider>
+                            <studio-label class="co-5b">INITIAL VALUE &nbsp;&nbsp;1</studio-label>
+                            <studio-slider orientation="h" value="1">
+                            </studio-slider>
+                        </div>
+                        <div style="margin-left: var(--studio-size-4u);">
+                            <div class="studio-row">
+                                <studio-label class="co-5b" orientation="90l">INITIAL VALUE &nbsp;&nbsp;.75</studio-label>
+                                <studio-slider value=".75"></studio-slider>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-note uk-margin-top uk-margin-left uk-margin-bottom">
+                    When oriented vertically, the lowest value is at the bottom by default.
+                    <div>When oriented horizontally, the lowest value is on the left end by default.</div>
+                    <div class="uk-margin-top">
+                        <div class="studio-row">
+                            <div class="studio-column">
+                                <studio-slider id="v-slider" end-value="100" value="15" step="1"
+                                    style="--studio-length:  var(--studio-size-4b);">
+                                    <studio-label id="v-label" slot="label-end" style="--studio-length: var(--studio-size-1b);
+                                    --studio-surface-color: transparent;">0</studio-label>
+                                </studio-slider>
+                            </div>
+                            <div class="studio-column">
+                                <div class="studio-row">
+                                    <studio-slider id="h-slider" end-value="100" value="15" orientation="h" step="1"
+                                        style="--studio-length:  var(--studio-size-4b);">
+                                        <studio-label id="h-label" slot="label-end" orientation="90r" style="--studio-length: var(--studio-size-1b);
+                                    --studio-surface-color: transparent;">0</studio-label>
+                                    </studio-slider>
+                                </div>
+                                <div style="margin: var(--studio-size-2u); max-width: var(--studio-size-7b);">
+                                    Note: display of the current value as shown here is explained under
+                                    the <a href="component/slider/#events">events</a> and
+                                    <a href="component/slider/#label-slot">label start and end slots</a> sections below.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li id="value-html"></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+<h3>Using Studiö from a React component</h3>
+<div class="text">
+    Once you have implemented the above in your project, 
+    you are ready to use the Studiö Web Components 
+    as documented under the component chapters of the Studiö documentation.
+    <div class="uk-margin-top">
+        The first thing you may want to do is to apply Studiö paper and ink
+        to the styling of the <code class="site-code">body</code>.
+        See the <a href="colors">Colors</a> chapter for more about
+        paper and ink shades.
+        <div class="uk-width-2xlarge site-code-section uk-margin-top">
+            <ul uk-tab>
+                <li><a href="#">index.css</a></li>
+            </ul>
+            <ul class="uk-switcher">
+                <li id="body-style-css"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h4>Selecting a theme and scale</h4>
+<div class="text">
+    To apply a light or dark theme, set either the 
+    <code class="site-code">studio-theme-light</code> or the
+    <code class="site-code">studio-theme-dark</code> class on 
+    the <code class="site-code">&lt;body&gt;</code> tag.
+    <div class="uk-margin-top">
+        To apply a 100% or 125% scale, set either the 
+        <code class="site-code">studio-scale-100</code> or the
+        <code class="site-code">studio-scale-125</code> class on 
+        the <code class="site-code">&lt;body&gt;</code> tag. 
+    </div>
+    <div class="uk-margin-top">
+        If you need to toggle theme or scale in your application, you 
+        may want to use the <code class="site-code">Theming</code> 
+        helper class.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">TS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="theming-from-component-html"></li>
+            <li id="theming-from-component-ts"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Binding</h4>
+<div class="text">
+    Use regular React binding on data and events but through 
+    React wrappers. For instance, the Studiö event normally 
+    called <code class="site-code">studio-slider-value</code> will 
+    be called <code class="site-code">studioSliderValue</code> with 
+    the wrapper.
+    <div class="uk-margin-top">
+      In this example we use 
+      <a target="_blank" href="https://github.com/kolodny/immutability-helper">immutability-helper</a>
+      to update the state of the sliders.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">TS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="binding-html"></li>
+            <li id="binding-ts"></li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+<div uk-sticky>
+    <div class="banner uk-flex uk-flex-between">
+
+        <!-- Navigation -->
+        <div>
+            <div class="uk-inline">
+                <button class="uk-button uk-button-link uk-button-small site-ink site-valign-top"
+                    style="height: var(--studio-size-1b);" type="button">
+                    <!-- menu from Feather icons -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-menu">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+                <div uk-dropdown="mode: click; delay-hide: 200; animation: uk-animation-slide-top-small; duration: 500; offset: 16"
+                    class="site-section" src="common/nav.html"></div>
+            </div>
+            <!-- Logo -->
+            <div class="uk-inline">
+                <div class="uk-flex-inline uk-margin-left">
+                    <div class="site-logo hue180 site-anim-fade-in-400ms">S</div>
+                    <div class="site-logo hue200 site-anim-fade-in-800ms">T</div>
+                    <div class="site-logo hue220 site-anim-fade-in-1200ms">U</div>
+                    <div class="site-logo hue240 site-anim-fade-in-1600ms">D</div>
+                    <div class="site-logo hue260 site-anim-fade-in-2s">I</div>
+                    <div class="site-logo hue280 site-anim-fade-in-2400ms">Ö</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div class="uk-inline" style="height: 100%; display: flex; align-items: center; justify-content: center;">
+            <div>
+                <!-- settings from Feather icons-->
+                <div style="width: var(--studio-size-4u); margin-right: 10px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-settings">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="settings-dropdown"
+                uk-dropdown="mode: click; delay-hide: 200; animation: uk-animation-slide-top-small; duration: 500;">
+                <ul class="uk-nav uk-dropdown-nav site-dropdown">
+                    <!---->
+                    <li class="uk-nav-header">Theme</li>
+                    <li><a href="javascript: studioSite.setToDark(true);">Dark</a></li>
+                    <li><a href="javascript: studioSite.setToDark(false);">Light</a></li>
+                    <!---->
+                    <li class="uk-nav-header">Scale</li>
+                    <li><a href="javascript: studioSite.setToSmall(true);">100%</a></li>
+                    <li><a href="javascript: studioSite.setToSmall(false);">125%</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

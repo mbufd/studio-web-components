@@ -1,0 +1,39 @@
+<h3>Theming</h3>
+<div class="text">
+    To apply a 100% or 125% scale, set either the
+    <code class="site-code">studio-scale-100</code> or the
+    <code class="site-code">studio-scale-125</code> class on
+    the <code class="site-code">&lt;body&gt;</code> tag.
+    <div class="uk-margin-top">
+        See the <a href="theming/">Theming</a> chapter for details.
+    </div>
+</div>
+
+<h3>Scaling</h3>
+<div class="text">
+    Scaling is done automatically for any of the 
+    <code class="site-code">--studio-size-...</code> CSS custom properties.
+    <div class="uk-margin-top">
+        However, when using custom sizes in <code class="site-code">px</code> units,
+        use the <code class="site-code">--studio-scale</code>
+        CSS custom property along with the <code class="site-code">calc</code> 
+        function to apply scaling according to the current scale.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+          <li><a href="#">Example</a></li>
+          <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-label style="--studio-width: calc(var(--studio-scale) * 60px);">
+                       --studio-scale
+                    </studio-label>
+                </div>
+          </li>
+          <li id="scaling-html"></li>
+        </ul>
+    </div>
+    <div class="site-section uk-margin-top" src="common/scale-switcher.html"></div>
+</div>

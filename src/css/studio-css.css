@@ -1,0 +1,37 @@
+/* studio-css.css - CSS for use in applications */
+
+/*
+* Studiö layout CSS classes
+*/
+/* 
+* Use studio-row on a div to layout a row of Studiö elements
+*/
+.studio-row {
+    display: flex;
+    flex-direction: row;
+    gap: var(--studio-size-layout-gap);
+    width: fit-content;
+}
+/* 
+* Use studio-row on a div to layout a column of Studiö elements
+*/
+.studio-column {    
+    display: flex;
+    flex-direction: column;
+    gap: var(--studio-size-layout-gap);
+    width: fit-content;
+}
+
+/* For placing standard gaps around Studiö elements */
+.studio-gapx-l {
+    margin-left: var(--studio-size-layout-gap);
+}
+.studio-gapx-r {
+    margin-right: var(--studio-size-layout-gap); 
+}
+.studio-gapx-t {
+    margin-top: var(--studio-size-layout-gap);
+}
+.studio-gapx-b {
+    margin-bottom: var(--studio-size-layout-gap);
+}

@@ -1,0 +1,76 @@
+<h3>Hues</h3>
+<div class="text">
+    Studiö comes with a selection of 16 hues from which curated colors sets are built,
+    and from which you can build custom shades using saturation and lightness.
+    <div class="uk-margin-top">
+        Shown below are the 16 hues at 100% saturation and 45% lightness:
+    </div>
+    <div class="site-section scroll uk-margin-top" src="common/hue-card.html"></div>
+    <div class="uk-margin-top">
+        Shown below is the red hue expressed at 100% saturation and increasing levels of lightness:
+    </div>
+    <div class="studio-row uk-margin-top">
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 0%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 10%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 20%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 30%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 40%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 50%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 60%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 70%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 80%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 90%);"></div>
+        <div class="hue-level" style="background: hsl(var(--studio-hue-red), 100%, 100%);"></div>
+    </div>
+    <h4>Custom colors based on standard hues</h4>
+    <div class="uk-margin-top">
+        To make a color based on a hue, use the <code class="site-code">hsl</code> CSS function with
+        one of the Studiö hue CSS proprties, such as <code class="site-code">--studio-hue-red</code>. 
+        Substitute the hue names to get different hues.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="hsl-html"></li>
+        </ul>
+    </div>
+    <div class="hsl-patch uk-margin-top" style="background: hsl(var(--studio-hue-green), 30%, 40%);"></div>
+
+    <h4>Tinted paper</h4>
+    <div id="hues-tinted-paper">
+        You can create tinted paper using the hue with the <code class="site-code">hsl</code> CSS function
+        by setting the saturation to <code class="site-code">--studio-paper-tint-s</code> and 
+        the lightness to <code class="site-code">--studio-paper-10-tint-l</code> or any of the other paper 
+        shades  <code class="site-code">--studio-paper-20-tint-l</code>, <code class="site-code">--studio-paper-30-tint-l</code>
+        <code class="site-code">--studio-paper-40-tint-l</code> or <code class="site-code">--studio-paper-50-tint-l</code>.
+        Regular paper inks will work fine on tinted paper.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li id="tinted-paper-html"></li>
+        </ul>
+    </div>
+    <div class="site-section uk-margin-top" src="common/theme-switcher.html"></div>
+    <div class="uk-margin-top">
+        <div class="hsl-patch mt-1u" 
+        style="background: hsl(var(--studio-hue-blue), var(--studio-paper-tint-s), var(--studio-paper-10-tint-l)); 
+        color: var(--studio-ink-10); text-align: center; padding: var(--studio-size-1u);">10</div>
+        <div class="hsl-patch mt-1u" 
+        style="background: hsl(var(--studio-hue-blue), var(--studio-paper-tint-s), var(--studio-paper-20-tint-l)); 
+        color: var(--studio-ink-20); text-align: center; padding: var(--studio-size-1u);">20</div>
+        <div class="hsl-patch mt-1u" 
+        style="background: hsl(var(--studio-hue-blue), var(--studio-paper-tint-s), var(--studio-paper-30-tint-l)); 
+        color: var(--studio-ink-30); text-align: center; padding: var(--studio-size-1u);">30</div>
+        <div class="hsl-patch mt-1u" 
+        style="background: hsl(var(--studio-hue-blue), var(--studio-paper-tint-s), var(--studio-paper-40-tint-l)); 
+        color: var(--studio-ink-40); text-align: center; padding: var(--studio-size-1u);">40</div>
+        <div class="hsl-patch mt-1u" 
+        style="background: hsl(var(--studio-hue-blue), var(--studio-paper-tint-s), var(--studio-paper-50-tint-l)); 
+        color: var(--studio-ink-50); text-align: center; padding: var(--studio-size-1u);">50</div>
+    </div>
+</div>

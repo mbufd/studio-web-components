@@ -1,0 +1,7 @@
+.DS_Store
+.vscode
+node_modules
+/lib
+_ext
+/0.0.0/dist
+/0.0.0/dev-dist

@@ -1,0 +1,102 @@
+<h3>Components</h3>
+<div class="text">
+    All components are fully stylable using CSS, slots and parts.
+    <div class="uk-margin-top">
+        All components work with plain HTML + CSS + JavaScript, as well as with popular
+        UI frameworks and libraries such as Angular, Vue.js and React.
+    </div>
+    <div style="display: flex; flex-flow: row wrap; gap: var(--studio-size-3u);">
+        <div class="uk-margin-top">
+            <div class="site-component-card-title site-card-link"
+                onclick="javascript: siteIntro.navigate('component/slider');">
+                &lt;studio-slider&gt;</div>
+            <div class="site-component-card-content">
+                <div class="studio-row">
+                    <studio-slider orientation="h" class="surface-marine">
+                        <studio-axis slot="cursor-range" orientation="h" fit></studio-axis>
+                    </studio-slider>
+                </div>
+                <div class="site-component-card-footer">
+                    A fully stylable <a href="component/slider/">slider</a> with horizontal and vertical
+                    orientations.
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-top">
+            <div class="site-component-card-title site-card-link"
+                onclick="javascript: siteIntro.navigate('component/pad');">
+                &lt;studio-pad&gt;</div>
+            <div class="site-component-card-content">
+                <div class="studio-row">
+                    <studio-pad swipe="on" xy-fx="xy" style="
+                    --studio-surface-color: var(--studio-marine);
+                    --studio-thickness: var(--studio-size-1b);">
+                        PAD
+                        <div slot="secondary">Swipe me</div>
+                        </studio-label>
+                </div>
+                <div class="site-component-card-footer">
+                    A fully stylable control <a href="component/pad/">pad</a> with XY sensitivity.
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-top">
+            <div class="site-component-card-title site-card-link"
+                onclick="javascript: siteIntro.navigate('component/axis');">
+                &lt;studio-axis&gt;</div>
+            <div class="site-component-card-content">
+                <div class="studio-row">
+                    <div class="bk-marine" style="display: flex; width: fit-content; border-radius: 2px; 
+                padding-left: var(--studio-size-2u); padding-right: var(--studio-size-2u);">
+                        <studio-axis orientation="h" ticks="c"></studio-axis>
+                    </div>
+                </div>
+                <div class="site-component-card-footer">
+                    A fully stylable <a href="component/axis/">axis</a> with horizontal or vertical
+                    orientations.
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-top">
+            <div class="site-component-card-title site-card-link"
+                onclick="javascript: siteIntro.navigate('component/label');">
+                &lt;studio-label&gt;</div>
+            <div class="site-component-card-content">
+                <div class="studio-row">
+                    <studio-label accent="s" style="
+                    --studio-surface-color: var(--studio-marine);
+                    --studio-accent-color: var(--studio-turquoise);
+                    --studio-label-accent-length: var(--studio-size-3u);
+                    --studio-thickness: var(--studio-size-1b);">
+                        LABEL
+                    </studio-label>
+                </div>
+                <div class="site-component-card-footer">
+                    A fully stylable <a href="component/label/">label</a> with horizontal and vertical
+                    orientations.
+                </div>
+            </div>
+        </div>
+        <div class="uk-margin-top">
+            <div class="site-component-card-title site-card-link"
+                onclick="javascript: siteIntro.navigate('component/led');">
+                &lt;studio-led&gt;</div>
+            <div class="site-component-card-content">
+                <div class="studio-row">
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                    <studio-led class="site-intro-led"></studio-led>
+                </div>
+                <div class="site-component-card-footer">
+                    A fully stylable <a href="component/led/">LED light</a> with variable intensity.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

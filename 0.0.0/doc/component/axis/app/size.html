@@ -1,0 +1,111 @@
+<h3 id="size">Size</h3>
+<div class="text">
+    The length and thickness of the axis are configurable using 
+    CSS custom properties.
+</div>
+
+<h4>Length</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-length</code> CSS custom property
+    to configure the length of the axis.
+    <div class="uk-margin-top">
+        The length corresponds to the height of a vertical axis 
+        or to the width of an horizontal axis.
+    </div>
+    <div class="uk-margin-top">
+        The default is <code class="site-code">--studio-size-5b</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis orientation="h"
+                            style="--studio-length: var(--studio-size-3b);">
+                        </studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="length-html"></li>
+            <li id="length-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Thickness</h4>
+<div class="text">
+    Use the <code class="site-code">--studio-thickness</code> CSS custom property
+    to configure the thickness of the axis.
+    <div class="uk-margin-top">
+        The thickness corresponds to the width of a vertical axis 
+        or to the height of an horizontal axis.
+    </div>
+    <div class="uk-margin-top">
+        The default is <code class="site-code">--studio-size-1b</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <div class="ruler-box hpad-8 bk-marine">
+                        <studio-axis orientation="h"
+                            style="--studio-thickness: var(--studio-size-4u);">
+                        </studio-axis>
+                    </div>
+                </div>
+            </li>
+            <li id="thickness-html"></li>
+            <li id="thickness-css"></li>
+        </ul>
+    </div>
+</div>
+
+<h4>Fitting inside of a container</h4>
+<div class="text">
+    Use the <code class="site-code">fit</code> attribute or property
+    to style the <code class="site-code">width</code> and 
+    <code class="site-code">height</code> of the axis to 
+    <code class="site-code">100%</code>, in order to fit a container.
+    <div class="uk-margin-top">
+        This is a useful shortcut to fit a axis 
+        inside a <code class="site-code">&lt;studio-slider&gt;</code> 
+        or inside a <code class="site-code">&lt;studio-pad&gt;</code>.
+    </div>
+    <div class="uk-width-2xlarge site-code-section uk-margin-top scroll">
+        <ul uk-tab>
+            <li><a href="#">Example</a></li>
+            <li><a href="#">HTML</a></li>
+        </ul>
+        <ul class="uk-switcher">
+            <li class="uk-active">
+                <div class="uk-margin-top uk-margin-left uk-margin-bottom">
+                    <studio-slider orientation="h">
+                        <studio-axis fit slot="cursor-range" orientation="h" 
+                        style="--studio-accent-color: var(--studio-azure);"></studio-axis>
+                    </studio-slider>
+                </div>
+                <div class="site-note uk-margin-top uk-margin-left uk-margin-bottom scroll">
+                    <code class="site-code">fit</code> sets 
+                    <code class="site-code">style="width: 100%; height: 100%;"</code> 
+                    on the <code class="site-code">&lt;studio-axis&gt;</code> element. 
+                    <div class="uk-margin-top">
+                        However, you can still add styles using <code class="site-code">style</code> 
+                        on the <code class="site-code">&lt;studio-axis&gt;</code>, as in the above 
+                        example.
+                    </div>
+                </div>
+            </li>
+            <li id="fit-html"></li>
+        </ul>
+    </div>
+</div>

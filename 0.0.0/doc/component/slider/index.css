@@ -1,0 +1,101 @@
+@import url('../../site.css');
+@import url('./app/example/color-picker.css');
+
+.tr-1b {
+    --studio-surface-color: transparent;
+    --studio-length: var(--studio-size-1b);
+}
+.tr-3b {
+    --studio-surface-color: transparent;
+    --studio-length: var(--studio-size-3b);
+}
+.co-5b {
+    --studio-surface-color: var(--studio-carbon);
+    --studio-length: var(--studio-size-5b);
+}
+.co-3b {
+    --studio-surface-color: var(--studio-carbon);
+    --studio-length: var(--studio-size-3b);
+}
+.co-2b {
+    --studio-surface-color: var(--studio-carbon);
+    --studio-length: var(--studio-size-2b);
+}
+.co-1b {
+    --studio-surface-color: var(--studio-carbon);
+    --studio-length: var(--studio-size-1b);
+}
+.th-1b {
+    --studio-thickness: var(--studio-size-1b);
+}
+.carbon {
+    --studio-surface-color: var(--studio-carbon);
+}
+.v-icon {
+    text-orientation: sideways;
+    height: 1em;
+    width: 1em;
+    align-self: center;
+}
+
+.color-label {
+    width: 100%;
+}
+
+.pattern {
+    background-repeat: repeat;
+    background-size: 12px;
+    background-image: url("../../assets/pattern.png");
+    opacity: 30%;
+}
+
+/* Examples for demonstrating parts */
+/* Styling the surface itself */
+.inner-surface-gradient {
+    --studio-surface-color: var(--studio-marine);
+}   
+/* The inner-surface part */ 
+.inner-surface-gradient::part(inner-surface) {
+    background: linear-gradient(to left, var(--studio-surface-color), var(--studio-turquoise), var(--studio-surface-color));
+    box-shadow: inset 0 0 var(--studio-size-1u) var(--studio-size-2u) var(--studio-surface-color);
+}
+/* The label parts */
+.label-ends::part(label-start) {
+    background: linear-gradient(to left, var(--studio-surface-color), 70%, var(--studio-turquoise));
+}
+.label-ends::part(label-end) {
+    background: linear-gradient(to right, var(--studio-surface-color), 70%, var(--studio-turquoise));
+}
+/* The accent parts */
+.sides::part(accent-tl),
+.sides::part(accent-br) {
+    border-style: dotted;
+    border-width: 0;
+    border-color: white;
+    background: linear-gradient(to left, var(--studio-turquoise), var(--studio-turquoise-flower), var(--studio-turquoise));
+}
+.sides::part(accent-tl) {
+    border-bottom-width: 1px;
+}
+.sides::part(accent-br) {
+    border-top-width: 1px;
+}
+/* The cursor part */
+.cursor::part(cursor) {
+    background-color: var(--studio-turquoise);
+    box-shadow: inset 0 0 5px 0px var(--studio-turquoise-flower);
+    height: var(--studio-size-6u);
+}
+/* The cursor range part */
+.cursor-range::part(cursor-range) {
+    border-style: solid;
+    border-color: rgba(255,255,255,.3);
+    border-width: 0 2px 0 2px;
+    height: 25%;
+}
+/* The cursor-decoration part */
+.decoration::part(cursor-decoration) {
+    width: var(--studio-size-1u);
+    height: var(--studio-size-1u);  
+    border-radius: 50%;
+}

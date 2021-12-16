@@ -1,0 +1,48 @@
+@import './studio-base.css';
+
+:root, 
+:host,
+.studio-scale-100 {
+    /* 
+    * Small scale 
+    */
+    --studio-scale: 1; /* 100% */
+    /* Gap */
+    --studio-size-gap: 4px;
+    --studio-size-layout-gap: var(--studio-size-gap);
+    /* Font sizes */
+    --studio-size-font-xxs: 10px;
+    --studio-size-font-xs: 12px;
+    --studio-size-font-s: 14px;
+    --studio-size-font-m: 16px;
+    --studio-size-font-l: 18px;
+    --studio-size-font-xl: 20px;
+    /* Base units (u) */
+    --studio-size-1u: 4px;
+    --studio-size-2u: 8px;
+    --studio-size-3u: 12px;
+    --studio-size-4u: 16px;
+    --studio-size-5u: 20px;
+    --studio-size-6u: 24px;
+    --studio-size-7u: 28px;
+    --studio-size-8u: 32px;
+    --studio-size-9u: 36px;
+    --studio-size-10u: 40px;
+    --studio-size-20u: 80px;
+    --studio-size-50u: 200px;
+    --studio-size-90u: 360px;
+    --studio-size-100u: 400px;
+    /* Block units (b) */
+    --studio-size-1b: 32px;
+    --studio-size-2b: 68px;
+    --studio-size-3b: 104px;
+    --studio-size-4b: 140px;
+    --studio-size-5b: 176px;
+    --studio-size-6b: 212px;
+    --studio-size-7b: 248px;
+    --studio-size-8b: 284px;
+    --studio-size-9b: 320px;
+    --studio-size-10b: 356px;
+    --studio-size-11b: 392px;
+    --studio-size-12b: 428px;
+}
